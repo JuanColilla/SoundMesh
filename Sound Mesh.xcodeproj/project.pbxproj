@@ -55,13 +55,37 @@
 			isa = PBXGroup;
 			children = (
 				0D3D06C622298F7000B42DBC /* AppDelegate.swift */,
-				0D3D06C822298F7000B42DBC /* ViewController.swift */,
-				0D3D06CA22298F7000B42DBC /* Main.storyboard */,
-				0D3D06CF22298F7200B42DBC /* LaunchScreen.storyboard */,
+				0DD05E2C2256D41A0086D3BA /* Model */,
+				0DD05E2D2256D42E0086D3BA /* View */,
+				0DD05E2E2256D4380086D3BA /* Controller */,
 				0D3D06CD22298F7200B42DBC /* Assets.xcassets */,
 				0D3D06D222298F7200B42DBC /* Info.plist */,
 			);
 			path = "Sound Mesh";
+			sourceTree = "<group>";
+		};
+		0DD05E2C2256D41A0086D3BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0DD05E2D2256D42E0086D3BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D3D06CA22298F7000B42DBC /* Main.storyboard */,
+				0D3D06CF22298F7200B42DBC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DD05E2E2256D4380086D3BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D3D06C822298F7000B42DBC /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
