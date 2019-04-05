@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0D3D06C722298F7000B42DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D06C622298F7000B42DBC /* AppDelegate.swift */; };
-		0D3D06C922298F7000B42DBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D06C822298F7000B42DBC /* ViewController.swift */; };
+		0D3D06C922298F7000B42DBC /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D06C822298F7000B42DBC /* InitialScreenViewController.swift */; };
 		0D3D06CC22298F7000B42DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3D06CA22298F7000B42DBC /* Main.storyboard */; };
 		0D3D06CE22298F7200B42DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3D06CD22298F7200B42DBC /* Assets.xcassets */; };
 		0D3D06D122298F7200B42DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3D06CF22298F7200B42DBC /* LaunchScreen.storyboard */; };
+		0DD05E302256DB470086D3BA /* DevicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E2F2256DB470086D3BA /* DevicesListViewController.swift */; };
+		0DD05E322256DBDC0086D3BA /* DeviceListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */; };
+		0DD05E342256DC0D0086D3BA /* MeshManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E332256DC0D0086D3BA /* MeshManagementViewController.swift */; };
+		0DD05E362256DC260086D3BA /* MeshDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */; };
+		0DD05E382256DC370086D3BA /* OratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E372256DC370086D3BA /* OratorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D3D06C322298F7000B42DBC /* Sound Mesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sound Mesh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3D06C622298F7000B42DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D3D06C822298F7000B42DBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D3D06C822298F7000B42DBC /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
 		0D3D06CB22298F7000B42DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D3D06CD22298F7200B42DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D3D06D022298F7200B42DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D3D06D222298F7200B42DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DD05E2F2256DB470086D3BA /* DevicesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListViewController.swift; sourceTree = "<group>"; };
+		0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewCell.swift; sourceTree = "<group>"; };
+		0DD05E332256DC0D0086D3BA /* MeshManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshManagementViewController.swift; sourceTree = "<group>"; };
+		0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshDiscoveryViewController.swift; sourceTree = "<group>"; };
+		0DD05E372256DC370086D3BA /* OratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OratorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +93,12 @@
 		0DD05E2E2256D4380086D3BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0D3D06C822298F7000B42DBC /* ViewController.swift */,
+				0D3D06C822298F7000B42DBC /* InitialScreenViewController.swift */,
+				0DD05E332256DC0D0086D3BA /* MeshManagementViewController.swift */,
+				0DD05E2F2256DB470086D3BA /* DevicesListViewController.swift */,
+				0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */,
+				0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */,
+				0DD05E372256DC370086D3BA /* OratorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,7 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D3D06C922298F7000B42DBC /* ViewController.swift in Sources */,
+				0DD05E362256DC260086D3BA /* MeshDiscoveryViewController.swift in Sources */,
+				0DD05E302256DB470086D3BA /* DevicesListViewController.swift in Sources */,
+				0D3D06C922298F7000B42DBC /* InitialScreenViewController.swift in Sources */,
+				0DD05E322256DBDC0086D3BA /* DeviceListViewCell.swift in Sources */,
+				0DD05E382256DC370086D3BA /* OratorViewController.swift in Sources */,
+				0DD05E342256DC0D0086D3BA /* MeshManagementViewController.swift in Sources */,
 				0D3D06C722298F7000B42DBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
