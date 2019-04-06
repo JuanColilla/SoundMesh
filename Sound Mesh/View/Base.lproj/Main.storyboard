@@ -25,9 +25,13 @@
                                     <constraint firstAttribute="height" constant="59" id="Hm1-ZR-RCp"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Crear una malla"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="wdI-1m-ipT" kind="show" id="LMC-JG-1OF"/>
+                                    <segue destination="lZp-ca-EA1" kind="show" id="d6c-Zf-nrl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmR-2R-UL2">
@@ -37,9 +41,13 @@
                                     <constraint firstAttribute="height" constant="59" id="ncG-45-bUT"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Modo orador"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="vQ3-nR-TCT" kind="show" id="J0p-MY-513"/>
+                                    <segue destination="Wed-Rg-0kv" kind="show" id="Xg1-Pv-Sff"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-IR-Hqm">
@@ -49,9 +57,13 @@
                                     <constraint firstAttribute="height" constant="59" id="ufu-Pj-PDz"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Unirse a una malla"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="8sY-NV-z1s" kind="show" id="WAQ-gx-YJQ"/>
+                                    <segue destination="J8x-v2-ZbI" kind="show" id="PqX-Jf-1jh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,7 +82,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SoundMesh" id="qkG-aS-A3X"/>
+                    <navigationItem key="navigationItem" title="SoundMesh" id="qkG-aS-A3X">
+                        <barButtonItem key="backBarButtonItem" title="Menú" id="ZZ8-lV-zmz"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,18 +99,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="09x-sm-2sl">
-                                <rect key="frame" x="30" y="110" width="315" height="458"/>
+                                <rect key="frame" x="16" y="110" width="343" height="527"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="7lG-Gt-XI0" style="IBUITableViewCellStyleDefault" id="qV1-S1-8gM">
-                                        <rect key="frame" x="0.0" y="28" width="315" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qV1-S1-8gM" id="eX9-bu-Rod">
-                                            <rect key="frame" x="0.0" y="0.0" width="315" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7lG-Gt-XI0">
-                                                    <rect key="frame" x="15" y="0.0" width="285" height="43.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -110,45 +124,39 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
                                 </userDefinedRuntimeAttributes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDa-N6-LEl">
-                                <rect key="frame" x="16" y="670" width="343" height="48"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.55168904050000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-KR-Asg">
+                                <rect key="frame" x="16" y="660" width="343" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="AeS-yn-3fW"/>
+                                    <constraint firstAttribute="height" constant="100" id="IDN-MO-FOW"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Crear malla"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿No encuentras tu malla? Crea tú una. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVk-JU-TAc">
-                                <rect key="frame" x="23" y="614" width="329" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="R9V-P3-eME"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <string key="text">Aquí veras una lista con los dispositivos que se han unido a tu malla, puedes eliminarlos individualmente.
+
+Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como el Bluetooth encendidos.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dUq-oF-h1H" firstAttribute="trailing" secondItem="WDa-N6-LEl" secondAttribute="trailing" constant="16" id="0WV-WF-geE"/>
-                            <constraint firstItem="dUq-oF-h1H" firstAttribute="trailing" secondItem="GVk-JU-TAc" secondAttribute="trailing" constant="23" id="241-MZ-qbr"/>
-                            <constraint firstItem="GVk-JU-TAc" firstAttribute="top" secondItem="09x-sm-2sl" secondAttribute="bottom" constant="46" id="3Ir-pi-U1b"/>
-                            <constraint firstItem="dUq-oF-h1H" firstAttribute="bottom" secondItem="WDa-N6-LEl" secondAttribute="bottom" constant="60" id="Ayz-WY-Smw"/>
-                            <constraint firstItem="WDa-N6-LEl" firstAttribute="leading" secondItem="dUq-oF-h1H" secondAttribute="leading" constant="16" id="Ckh-Ni-pzS"/>
-                            <constraint firstItem="GVk-JU-TAc" firstAttribute="leading" secondItem="dUq-oF-h1H" secondAttribute="leading" constant="23" id="HDc-e3-ep0"/>
+                            <constraint firstItem="dUq-oF-h1H" firstAttribute="bottom" secondItem="O9Z-KR-Asg" secondAttribute="bottom" constant="18" id="5aK-98-atd"/>
+                            <constraint firstItem="O9Z-KR-Asg" firstAttribute="top" secondItem="09x-sm-2sl" secondAttribute="bottom" constant="23" id="BtB-cr-bOI"/>
+                            <constraint firstItem="O9Z-KR-Asg" firstAttribute="leading" secondItem="dUq-oF-h1H" secondAttribute="leading" constant="16" id="EDa-LK-Eww"/>
                             <constraint firstItem="09x-sm-2sl" firstAttribute="centerX" secondItem="MBY-E2-0G2" secondAttribute="centerX" id="Hzb-Jq-fKf"/>
-                            <constraint firstItem="GVk-JU-TAc" firstAttribute="centerX" secondItem="MBY-E2-0G2" secondAttribute="centerX" id="L6a-5T-jhs"/>
-                            <constraint firstItem="09x-sm-2sl" firstAttribute="leading" secondItem="dUq-oF-h1H" secondAttribute="leading" constant="30" id="SF0-n3-u33"/>
                             <constraint firstItem="09x-sm-2sl" firstAttribute="top" secondItem="dUq-oF-h1H" secondAttribute="top" constant="22" id="VjX-AY-qvz"/>
-                            <constraint firstItem="dUq-oF-h1H" firstAttribute="trailing" secondItem="09x-sm-2sl" secondAttribute="trailing" constant="30" id="cys-hq-MXm"/>
-                            <constraint firstItem="WDa-N6-LEl" firstAttribute="top" secondItem="GVk-JU-TAc" secondAttribute="bottom" constant="35" id="vHL-Y5-oga"/>
+                            <constraint firstItem="09x-sm-2sl" firstAttribute="leading" secondItem="dUq-oF-h1H" secondAttribute="leading" constant="16" id="fdw-Ve-Q4B"/>
+                            <constraint firstItem="O9Z-KR-Asg" firstAttribute="centerX" secondItem="MBY-E2-0G2" secondAttribute="centerX" id="qpo-bf-ShR"/>
+                            <constraint firstItem="dUq-oF-h1H" firstAttribute="trailing" secondItem="09x-sm-2sl" secondAttribute="trailing" constant="16" id="x1t-Iz-wmy"/>
+                            <constraint firstItem="dUq-oF-h1H" firstAttribute="trailing" secondItem="O9Z-KR-Asg" secondAttribute="trailing" constant="16" id="zlW-n1-kEL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dUq-oF-h1H"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Gestion de tu malla" id="J8h-7W-YbD"/>
+                    <navigationItem key="navigationItem" title="Gestion de tu malla" id="J8h-7W-YbD">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="sqy-8O-CAi"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ah-Wa-rgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,10 +169,81 @@
                     <view key="view" contentMode="scaleToFill" id="uFE-fL-OC2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OEM-9Q-HkJ">
+                                <rect key="frame" x="16" y="110" width="343" height="527"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="wu7-7e-cuZ" style="IBUITableViewCellStyleDefault" id="Mb1-Ub-qTt">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mb1-Ub-qTt" id="V2D-uL-Y2I">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wu7-7e-cuZ">
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uf-gs-rNN">
+                                <rect key="frame" x="41" y="700" width="293" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.55168904050000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="kvb-gS-5Ta"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Crear una malla"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="lZp-ca-EA1" kind="show" id="4Xj-Lp-xkk"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="¿No encuentras tu malla? Crea tú una." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rne-fV-IDX">
+                                <rect key="frame" x="16" y="655" width="343" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="l2e-aD-uJL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9uf-gs-rNN" firstAttribute="top" secondItem="rne-fV-IDX" secondAttribute="bottom" constant="8" id="0v2-hH-m06"/>
+                            <constraint firstItem="rne-fV-IDX" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="16" id="6RA-or-oTN"/>
+                            <constraint firstItem="o2Q-9T-Uqq" firstAttribute="trailing" secondItem="rne-fV-IDX" secondAttribute="trailing" constant="16" id="Bhh-Nc-TxR"/>
+                            <constraint firstItem="OEM-9Q-HkJ" firstAttribute="top" secondItem="o2Q-9T-Uqq" secondAttribute="top" constant="22" id="MTq-Fe-JMi"/>
+                            <constraint firstItem="OEM-9Q-HkJ" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="16" id="NKJ-GV-fga"/>
+                            <constraint firstItem="o2Q-9T-Uqq" firstAttribute="trailing" secondItem="9uf-gs-rNN" secondAttribute="trailing" constant="41" id="WZW-vm-XtK"/>
+                            <constraint firstItem="rne-fV-IDX" firstAttribute="top" secondItem="OEM-9Q-HkJ" secondAttribute="bottom" constant="18" id="ZUm-Dn-Q6s"/>
+                            <constraint firstItem="o2Q-9T-Uqq" firstAttribute="bottom" secondItem="9uf-gs-rNN" secondAttribute="bottom" constant="29" id="eh1-zq-5e6"/>
+                            <constraint firstItem="9uf-gs-rNN" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="41" id="juN-CG-etl"/>
+                            <constraint firstItem="OEM-9Q-HkJ" firstAttribute="centerX" secondItem="uFE-fL-OC2" secondAttribute="centerX" id="qf7-aI-aRK"/>
+                            <constraint firstItem="o2Q-9T-Uqq" firstAttribute="trailing" secondItem="OEM-9Q-HkJ" secondAttribute="trailing" constant="16" id="tuZ-kS-CDG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="o2Q-9T-Uqq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Mallas disponibles" id="9sl-vF-MdR"/>
+                    <navigationItem key="navigationItem" title="Mallas disponibles" id="9sl-vF-MdR">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="Kq6-y6-iS8"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bs-fX-oWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,14 +256,92 @@
                     <view key="view" contentMode="scaleToFill" id="5v6-rD-WyC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orator Mic" translatesAutoresizingMaskIntoConstraints="NO" id="pPm-g0-v7u">
+                                <rect key="frame" x="130" y="270" width="115" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="42g-Tc-XaL"/>
+                                    <constraint firstAttribute="height" constant="137" id="RHa-bx-2eV"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W2x-dq-iSY">
+                                <rect key="frame" x="16" y="435" width="343" height="252"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ZaH-on-MHz" style="IBUITableViewCellStyleDefault" id="Qg3-DL-puI">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qg3-DL-puI" id="hCl-WM-m54">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZaH-on-MHz">
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-em-IHx">
+                                <rect key="frame" x="16" y="110" width="343" height="102"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">El audio captado por éste dispositivo será emitido por los dispositivos que se unan a ésta malla.
+
+Pulsa el micrófono para activar/desactivar la función de orador:</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Puedes eliminar dispositivos de ésta malla de forma individual." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-Bi-7xL">
+                                <rect key="frame" x="16" y="695" width="343" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="02O-g0-iUx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VyV-Bi-7xL" firstAttribute="top" secondItem="W2x-dq-iSY" secondAttribute="bottom" constant="8" id="0U4-KG-a9k"/>
+                            <constraint firstItem="pPm-g0-v7u" firstAttribute="centerX" secondItem="5v6-rD-WyC" secondAttribute="centerX" id="2bq-q6-LHW"/>
+                            <constraint firstItem="pPm-g0-v7u" firstAttribute="top" secondItem="ggk-S0-30r" secondAttribute="top" constant="182" id="4u9-LF-AVi"/>
+                            <constraint firstItem="W2x-dq-iSY" firstAttribute="centerX" secondItem="5v6-rD-WyC" secondAttribute="centerX" id="6hP-ez-Rgd"/>
+                            <constraint firstItem="ggk-S0-30r" firstAttribute="trailing" secondItem="W2x-dq-iSY" secondAttribute="trailing" constant="16" id="6xW-Xv-ACH"/>
+                            <constraint firstItem="W2x-dq-iSY" firstAttribute="leading" secondItem="ggk-S0-30r" secondAttribute="leading" constant="16" id="CJy-7o-GKS"/>
+                            <constraint firstItem="W2x-dq-iSY" firstAttribute="top" secondItem="pPm-g0-v7u" secondAttribute="bottom" constant="28" id="N6L-9t-cTL"/>
+                            <constraint firstItem="tPn-em-IHx" firstAttribute="top" secondItem="ggk-S0-30r" secondAttribute="top" constant="22" id="Qqp-9e-fOn"/>
+                            <constraint firstItem="ggk-S0-30r" firstAttribute="trailing" secondItem="tPn-em-IHx" secondAttribute="trailing" constant="16" id="Ryn-gg-WeN"/>
+                            <constraint firstItem="ggk-S0-30r" firstAttribute="trailing" secondItem="pPm-g0-v7u" secondAttribute="trailing" constant="130" id="TJM-xU-4F8"/>
+                            <constraint firstItem="tPn-em-IHx" firstAttribute="centerX" secondItem="5v6-rD-WyC" secondAttribute="centerX" id="TWL-2r-DcK"/>
+                            <constraint firstItem="tPn-em-IHx" firstAttribute="leading" secondItem="ggk-S0-30r" secondAttribute="leading" constant="16" id="V4k-dA-XbA"/>
+                            <constraint firstItem="pPm-g0-v7u" firstAttribute="leading" secondItem="ggk-S0-30r" secondAttribute="leading" constant="130" id="XTN-MM-MXK"/>
+                            <constraint firstItem="pPm-g0-v7u" firstAttribute="top" secondItem="tPn-em-IHx" secondAttribute="bottom" constant="58" id="aAR-W2-8TR"/>
+                            <constraint firstItem="VyV-Bi-7xL" firstAttribute="centerX" secondItem="5v6-rD-WyC" secondAttribute="centerX" id="bdq-Uj-tea"/>
+                            <constraint firstItem="ggk-S0-30r" firstAttribute="trailing" secondItem="VyV-Bi-7xL" secondAttribute="trailing" constant="16" id="gcK-BZ-Luk"/>
+                            <constraint firstItem="VyV-Bi-7xL" firstAttribute="leading" secondItem="ggk-S0-30r" secondAttribute="leading" constant="16" id="xwW-Gg-e67"/>
+                            <constraint firstItem="ggk-S0-30r" firstAttribute="bottom" secondItem="VyV-Bi-7xL" secondAttribute="bottom" constant="36" id="zXq-JH-IYb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ggk-S0-30r"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Orador" id="FwV-7Q-IlZ"/>
+                    <navigationItem key="navigationItem" title="Orador" id="FwV-7Q-IlZ">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="Xsq-xE-IhO"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlN-Qb-Ua0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3194" y="812"/>
+            <point key="canvasLocation" x="3192.8000000000002" y="811.33004926108379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vH4-2u-mKg">
@@ -204,59 +361,11 @@
             </objects>
             <point key="canvasLocation" x="173.59999999999999" y="26.600985221674879"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="9E4-zt-VGx">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wdI-1m-ipT" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MdQ-dH-KOg">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="lZp-ca-EA1" kind="relationship" relationship="rootViewController" id="8Yv-5l-l8b"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mos-O7-nVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2252" y="-798"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="klA-Yu-sPd">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8sY-NV-z1s" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kZ7-89-v1l">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="J8x-v2-ZbI" kind="relationship" relationship="rootViewController" id="hiD-Rq-2nG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8A-F7-oL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2252" y="26.600985221674879"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="gJd-3m-LXR">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vQ3-nR-TCT" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O9B-cs-rpe">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Wed-Rg-0kv" kind="relationship" relationship="rootViewController" id="RBU-1g-1qK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XKI-3L-7G6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2252" y="812"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="Orator Mic" width="42" height="66"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Xj-Lp-xkk"/>
+    </inferredMetricsTieBreakers>
 </document>
