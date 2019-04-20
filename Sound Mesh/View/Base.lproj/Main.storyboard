@@ -15,59 +15,62 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="206-oq-n6i">
-                                <rect key="frame" x="67" y="237.66666666666663" width="241" height="59"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.55168904050000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="67" y="193.66666666666669" width="241" height="59"/>
+                                <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="Hm1-ZR-RCp"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Crear una malla"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Crear una malla">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="lZp-ca-EA1" kind="show" id="d6c-Zf-nrl"/>
+                                    <segue destination="Erb-ad-6RS" kind="show" id="7yC-qP-hHD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmR-2R-UL2">
-                                <rect key="frame" x="67" y="516" width="241" height="59"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.55168904050000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="67" y="472" width="241" height="59"/>
+                                <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="ncG-45-bUT"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Modo orador"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Modo orador">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="Wed-Rg-0kv" kind="show" id="Xg1-Pv-Sff"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-IR-Hqm">
-                                <rect key="frame" x="67" y="376.66666666666669" width="241" height="59"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.55168904050000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="67" y="332.66666666666669" width="241" height="59"/>
+                                <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="ufu-Pj-PDz"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Unirse a una malla"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Unirse a una malla">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="J8x-v2-ZbI" kind="show" id="PqX-Jf-1jh"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="206-oq-n6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Bsv-Rw-WI9"/>
                             <constraint firstItem="Ds9-IR-Hqm" firstAttribute="top" secondItem="206-oq-n6i" secondAttribute="bottom" constant="80" id="Cp5-Ph-DJt"/>
@@ -83,23 +86,24 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="SoundMesh" id="qkG-aS-A3X">
-                        <barButtonItem key="backBarButtonItem" title="Menú" id="ZZ8-lV-zmz"/>
+                        <barButtonItem key="backBarButtonItem" title="Inicio" id="ZZ8-lV-zmz"/>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1116" y="26.600985221674879"/>
         </scene>
-        <!--Gestion de tu malla-->
+        <!--Gestión de tu malla-->
         <scene sceneID="aKm-PK-NBr">
             <objects>
-                <viewController id="lZp-ca-EA1" sceneMemberID="viewController">
+                <viewController id="lZp-ca-EA1" customClass="MeshManagementViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MBY-E2-0G2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="09x-sm-2sl">
-                                <rect key="frame" x="16" y="110" width="343" height="527"/>
+                                <rect key="frame" x="16" y="22" width="343" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="7lG-Gt-XI0" style="IBUITableViewCellStyleDefault" id="qV1-S1-8gM">
@@ -127,26 +131,26 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
                                 </userDefinedRuntimeAttributes>
                             </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-KR-Asg">
-                                <rect key="frame" x="16" y="660" width="343" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-KR-Asg">
+                                <rect key="frame" x="16" y="530" width="343" height="94"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="IDN-MO-FOW"/>
+                                    <constraint firstAttribute="height" constant="94" id="XRG-U4-TYy"/>
                                 </constraints>
                                 <string key="text">Aquí veras una lista con los dispositivos que se han unido a tu malla, puedes eliminarlos individualmente.
 
 Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como el Bluetooth encendidos.</string>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dUq-oF-h1H" firstAttribute="bottom" secondItem="O9Z-KR-Asg" secondAttribute="bottom" constant="18" id="5aK-98-atd"/>
-                            <constraint firstItem="O9Z-KR-Asg" firstAttribute="top" secondItem="09x-sm-2sl" secondAttribute="bottom" constant="23" id="BtB-cr-bOI"/>
+                            <constraint firstItem="dUq-oF-h1H" firstAttribute="bottom" secondItem="O9Z-KR-Asg" secondAttribute="bottom" constant="17" id="7So-Sm-Vhe"/>
                             <constraint firstItem="O9Z-KR-Asg" firstAttribute="leading" secondItem="dUq-oF-h1H" secondAttribute="leading" constant="16" id="EDa-LK-Eww"/>
                             <constraint firstItem="09x-sm-2sl" firstAttribute="centerX" secondItem="MBY-E2-0G2" secondAttribute="centerX" id="Hzb-Jq-fKf"/>
                             <constraint firstItem="09x-sm-2sl" firstAttribute="top" secondItem="dUq-oF-h1H" secondAttribute="top" constant="22" id="VjX-AY-qvz"/>
+                            <constraint firstItem="O9Z-KR-Asg" firstAttribute="top" secondItem="09x-sm-2sl" secondAttribute="bottom" constant="16" id="ZAt-8E-nyq"/>
                             <constraint firstItem="09x-sm-2sl" firstAttribute="leading" secondItem="dUq-oF-h1H" secondAttribute="leading" constant="16" id="fdw-Ve-Q4B"/>
                             <constraint firstItem="O9Z-KR-Asg" firstAttribute="centerX" secondItem="MBY-E2-0G2" secondAttribute="centerX" id="qpo-bf-ShR"/>
                             <constraint firstItem="dUq-oF-h1H" firstAttribute="trailing" secondItem="09x-sm-2sl" secondAttribute="trailing" constant="16" id="x1t-Iz-wmy"/>
@@ -154,24 +158,58 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dUq-oF-h1H"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Gestion de tu malla" id="J8h-7W-YbD">
-                        <barButtonItem key="backBarButtonItem" title="Atrás" id="sqy-8O-CAi"/>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Item" image="Mesh" landscapeImage="Mesh" selectedImage="Mesh" id="P8x-xY-rne"/>
+                    <navigationItem key="navigationItem" title="Gestión de tu malla" id="J8h-7W-YbD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ah-Wa-rgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3192.8000000000002" y="-798.02955665024638"/>
+            <point key="canvasLocation" x="6399.1999999999998" y="-340.64039408866995"/>
+        </scene>
+        <!--Reproductor-->
+        <scene sceneID="nl3-SH-K0E">
+            <objects>
+                <viewController id="1Me-cB-FgU" customClass="MediaViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XGM-og-t5f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NPu-ZX-8iz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reproductor" image="Player" landscapeImage="Player" selectedImage="Player" id="P0p-kG-8Lz"/>
+                    <navigationItem key="navigationItem" title="Reproductor" id="MbL-pD-XBa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9S-OK-vzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6399.1999999999998" y="-1136.4532019704434"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DTt-2N-MaO">
+            <objects>
+                <tabBarController id="Erb-ad-6RS" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pen-b8-moL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1Me-cB-FgU" kind="relationship" relationship="viewControllers" id="RDl-Ho-7lV"/>
+                        <segue destination="lZp-ca-EA1" kind="relationship" relationship="viewControllers" id="ub4-fM-hR8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRx-ze-J1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3194" y="-749"/>
         </scene>
         <!--Mallas disponibles-->
         <scene sceneID="KOA-xC-jh5">
             <objects>
-                <viewController id="J8x-v2-ZbI" sceneMemberID="viewController">
+                <viewController id="J8x-v2-ZbI" customClass="MeshDiscoveryViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uFE-fL-OC2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OEM-9Q-HkJ">
-                                <rect key="frame" x="16" y="110" width="343" height="527"/>
+                                <rect key="frame" x="16" y="22" width="343" height="527"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="wu7-7e-cuZ" style="IBUITableViewCellStyleDefault" id="Mb1-Ub-qTt">
@@ -200,27 +238,30 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </userDefinedRuntimeAttributes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uf-gs-rNN">
-                                <rect key="frame" x="41" y="700" width="293" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.55168904050000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="41" y="612" width="293" height="49"/>
+                                <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="kvb-gS-5Ta"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Crear una malla"/>
+                                <state key="normal" title="Crear una malla">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="lZp-ca-EA1" kind="show" id="4Xj-Lp-xkk"/>
+                                    <segue destination="Erb-ad-6RS" kind="show" id="rEI-0A-T2k"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="¿No encuentras tu malla? Crea tú una." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rne-fV-IDX">
-                                <rect key="frame" x="16" y="655" width="343" height="37"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="¿No encuentras tu malla? Crea tú una." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rne-fV-IDX">
+                                <rect key="frame" x="16" y="567" width="343" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="l2e-aD-uJL"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -247,25 +288,25 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bs-fX-oWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3194.4000000000001" y="26.600985221674879"/>
+            <point key="canvasLocation" x="3193" y="27"/>
         </scene>
         <!--Orador-->
         <scene sceneID="fnl-Qb-4ar">
             <objects>
-                <viewController id="Wed-Rg-0kv" sceneMemberID="viewController">
+                <viewController id="Wed-Rg-0kv" customClass="OratorViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5v6-rD-WyC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orator Mic" translatesAutoresizingMaskIntoConstraints="NO" id="pPm-g0-v7u">
-                                <rect key="frame" x="130" y="270" width="115" height="137"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mic" highlightedImage="Orator Mic" translatesAutoresizingMaskIntoConstraints="NO" id="pPm-g0-v7u">
+                                <rect key="frame" x="130" y="182" width="115" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="42g-Tc-XaL"/>
                                     <constraint firstAttribute="height" constant="137" id="RHa-bx-2eV"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W2x-dq-iSY">
-                                <rect key="frame" x="16" y="435" width="343" height="252"/>
+                                <rect key="frame" x="16" y="347" width="343" height="252"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ZaH-on-MHz" style="IBUITableViewCellStyleDefault" id="Qg3-DL-puI">
@@ -293,21 +334,23 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
                                 </userDefinedRuntimeAttributes>
                             </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-em-IHx">
-                                <rect key="frame" x="16" y="110" width="343" height="102"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-em-IHx">
+                                <rect key="frame" x="16" y="22" width="343" height="102"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">El audio captado por éste dispositivo será emitido por los dispositivos que se unan a ésta malla.
 
 Pulsa el micrófono para activar/desactivar la función de orador:</string>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Puedes eliminar dispositivos de ésta malla de forma individual." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-Bi-7xL">
-                                <rect key="frame" x="16" y="695" width="343" height="47"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Puedes eliminar dispositivos de ésta malla de forma individual." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-Bi-7xL">
+                                <rect key="frame" x="16" y="607" width="343" height="47"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="02O-g0-iUx"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -338,6 +381,9 @@ Pulsa el micrófono para activar/desactivar la función de orador:</string>
                     <navigationItem key="navigationItem" title="Orador" id="FwV-7Q-IlZ">
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="Xsq-xE-IhO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="micImage" destination="pPm-g0-v7u" id="qGB-p0-ubT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlN-Qb-Ua0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -348,9 +394,14 @@ Pulsa el micrófono para activar/desactivar la función de orador:</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K5C-5w-mja" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yE6-h6-Iyh">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yE6-h6-Iyh">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -363,9 +414,12 @@ Pulsa el micrófono para activar/desactivar la función de orador:</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Mesh" width="25" height="18"/>
+        <image name="Mic" width="300" height="265"/>
         <image name="Orator Mic" width="42" height="66"/>
+        <image name="Player" width="25" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Xj-Lp-xkk"/>
+        <segue reference="rEI-0A-T2k"/>
     </inferredMetricsTieBreakers>
 </document>

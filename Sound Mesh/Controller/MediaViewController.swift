@@ -1,32 +1,20 @@
 //
-//  OratorViewController.swift
+//  MediaViewController.swift
 //  Sound Mesh
 //
-//  Created by Juan Colilla on 05/04/2019.
+//  Created by Juan Colilla on 08/04/2019.
 //  Copyright © 2019 Juan Colilla. All rights reserved.
 //
 
 import UIKit
 
-class OratorViewController: UIViewController {
-    
-    @IBOutlet weak var micImage: UIImageView!
-    
-    @IBAction func tapMicImage(_ sender: UITapGestureRecognizer) {
-        // TAP GESTURE RECOGNIZER?
-        // https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures#overview
-    }
-    
+class MediaViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        micImage.image = UIImage(named: "Mic")
-        
-        
 
         // Do any additional setup after loading the view.
     }
-    
-   
     
 
     /*

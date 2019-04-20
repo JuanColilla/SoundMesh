@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D11140F225B9E79008C64A7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D11140E225B9E79008C64A7 /* MediaPlayer.framework */; };
+		0D111411225B9EAA008C64A7 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D111410225B9EAA008C64A7 /* MediaViewController.swift */; };
+		0D1D98A52267A0F1004EF6AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D1D98A42267A0F1004EF6AC /* Assets.xcassets */; };
 		0D3D06C722298F7000B42DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D06C622298F7000B42DBC /* AppDelegate.swift */; };
 		0D3D06C922298F7000B42DBC /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D06C822298F7000B42DBC /* InitialScreenViewController.swift */; };
 		0D3D06CC22298F7000B42DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3D06CA22298F7000B42DBC /* Main.storyboard */; };
-		0D3D06CE22298F7200B42DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3D06CD22298F7200B42DBC /* Assets.xcassets */; };
 		0D3D06D122298F7200B42DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3D06CF22298F7200B42DBC /* LaunchScreen.storyboard */; };
 		0DD05E302256DB470086D3BA /* DevicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E2F2256DB470086D3BA /* DevicesListViewController.swift */; };
 		0DD05E322256DBDC0086D3BA /* DeviceListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */; };
@@ -20,11 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D11140E225B9E79008C64A7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0D111410225B9EAA008C64A7 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		0D1D98A42267A0F1004EF6AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D3D06C322298F7000B42DBC /* Sound Mesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sound Mesh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3D06C622298F7000B42DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D3D06C822298F7000B42DBC /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
 		0D3D06CB22298F7000B42DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D3D06CD22298F7200B42DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D3D06D022298F7200B42DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D3D06D222298F7200B42DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DD05E2F2256DB470086D3BA /* DevicesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListViewController.swift; sourceTree = "<group>"; };
@@ -39,17 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D11140F225B9E79008C64A7 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D11140D225B9E79008C64A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D11140E225B9E79008C64A7 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0D3D06BA22298F7000B42DBC = {
 			isa = PBXGroup;
 			children = (
 				0D3D06C522298F7000B42DBC /* Sound Mesh */,
 				0D3D06C422298F7000B42DBC /* Products */,
+				0D11140D225B9E79008C64A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,7 +82,6 @@
 				0DD05E2C2256D41A0086D3BA /* Model */,
 				0DD05E2D2256D42E0086D3BA /* View */,
 				0DD05E2E2256D4380086D3BA /* Controller */,
-				0D3D06CD22298F7200B42DBC /* Assets.xcassets */,
 				0D3D06D222298F7200B42DBC /* Info.plist */,
 			);
 			path = "Sound Mesh";
@@ -86,6 +99,7 @@
 			children = (
 				0D3D06CA22298F7000B42DBC /* Main.storyboard */,
 				0D3D06CF22298F7200B42DBC /* LaunchScreen.storyboard */,
+				0D1D98A42267A0F1004EF6AC /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +113,7 @@
 				0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */,
 				0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */,
 				0DD05E372256DC370086D3BA /* OratorViewController.swift */,
+				0D111410225B9EAA008C64A7 /* MediaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3D06D122298F7200B42DBC /* LaunchScreen.storyboard in Resources */,
-				0D3D06CE22298F7200B42DBC /* Assets.xcassets in Resources */,
+				0D1D98A52267A0F1004EF6AC /* Assets.xcassets in Resources */,
 				0D3D06CC22298F7000B42DBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +192,7 @@
 				0DD05E362256DC260086D3BA /* MeshDiscoveryViewController.swift in Sources */,
 				0DD05E302256DB470086D3BA /* DevicesListViewController.swift in Sources */,
 				0D3D06C922298F7000B42DBC /* InitialScreenViewController.swift in Sources */,
+				0D111411225B9EAA008C64A7 /* MediaViewController.swift in Sources */,
 				0DD05E322256DBDC0086D3BA /* DeviceListViewCell.swift in Sources */,
 				0DD05E382256DC370086D3BA /* OratorViewController.swift in Sources */,
 				0DD05E342256DC0D0086D3BA /* MeshManagementViewController.swift in Sources */,
@@ -325,7 +341,6 @@
 		0D3D06D622298F7200B42DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3KF59NP775;
 				INFOPLIST_FILE = "Sound Mesh/Info.plist";
@@ -343,7 +358,6 @@
 		0D3D06D722298F7200B42DBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3KF59NP775;
 				INFOPLIST_FILE = "Sound Mesh/Info.plist";
