@@ -26,8 +26,13 @@ class OratorViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-   
-    
+    @IBAction func micImageTap(_ sender: UITapGestureRecognizer) {
+        if micImage.image == UIImage(named: "Mic") {
+            micImage.image = UIImage(named: "RedMic")
+        } else {
+            micImage.image = UIImage(named: "Mic")
+        }
+    }
 
     /*
     // MARK: - Navigation

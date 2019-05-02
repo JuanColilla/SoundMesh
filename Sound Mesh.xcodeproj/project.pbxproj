@@ -19,6 +19,10 @@
 		0DD05E342256DC0D0086D3BA /* MeshManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E332256DC0D0086D3BA /* MeshManagementViewController.swift */; };
 		0DD05E362256DC260086D3BA /* MeshDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */; };
 		0DD05E382256DC370086D3BA /* OratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E372256DC370086D3BA /* OratorViewController.swift */; };
+		0DE5C8162273D82D000F4970 /* MeshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C8152273D82D000F4970 /* MeshManager.swift */; };
+		0DE5C8182273D89A000F4970 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE5C8172273D89A000F4970 /* MultipeerConnectivity.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		0DE5C81A2273E991000F4970 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C8192273E991000F4970 /* MediaManager.swift */; };
+		0DE5C81C2273E9A1000F4970 /* OratorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C81B2273E9A1000F4970 /* OratorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		0DD05E332256DC0D0086D3BA /* MeshManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshManagementViewController.swift; sourceTree = "<group>"; };
 		0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshDiscoveryViewController.swift; sourceTree = "<group>"; };
 		0DD05E372256DC370086D3BA /* OratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OratorViewController.swift; sourceTree = "<group>"; };
+		0DE5C8152273D82D000F4970 /* MeshManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshManager.swift; sourceTree = "<group>"; };
+		0DE5C8172273D89A000F4970 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		0DE5C8192273E991000F4970 /* MediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
+		0DE5C81B2273E9A1000F4970 /* OratorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OratorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE5C8182273D89A000F4970 /* MultipeerConnectivity.framework in Frameworks */,
 				0D11140F225B9E79008C64A7 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +62,7 @@
 		0D11140D225B9E79008C64A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0DE5C8172273D89A000F4970 /* MultipeerConnectivity.framework */,
 				0D11140E225B9E79008C64A7 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
@@ -90,6 +100,9 @@
 		0DD05E2C2256D41A0086D3BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0DE5C8152273D82D000F4970 /* MeshManager.swift */,
+				0DE5C8192273E991000F4970 /* MediaManager.swift */,
+				0DE5C81B2273E9A1000F4970 /* OratorManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,7 +204,10 @@
 			files = (
 				0DD05E362256DC260086D3BA /* MeshDiscoveryViewController.swift in Sources */,
 				0DD05E302256DB470086D3BA /* DevicesListViewController.swift in Sources */,
+				0DE5C81C2273E9A1000F4970 /* OratorManager.swift in Sources */,
 				0D3D06C922298F7000B42DBC /* InitialScreenViewController.swift in Sources */,
+				0DE5C8162273D82D000F4970 /* MeshManager.swift in Sources */,
+				0DE5C81A2273E991000F4970 /* MediaManager.swift in Sources */,
 				0D111411225B9EAA008C64A7 /* MediaViewController.swift in Sources */,
 				0DD05E322256DBDC0086D3BA /* DeviceListViewCell.swift in Sources */,
 				0DD05E382256DC370086D3BA /* OratorViewController.swift in Sources */,

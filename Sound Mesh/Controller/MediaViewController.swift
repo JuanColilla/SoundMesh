@@ -9,12 +9,35 @@
 import UIKit
 
 class MediaViewController: UIViewController {
-
+    
+    /*var covers = [UIImage(named: "CDCover1"), UIImage(named: "CDCover2")!, UIImage(named: "CDCoverd3"), UIImage(named: "CDCover4"), UIImage(named: "CDCover5")]*/
+    
+    
+    @IBOutlet weak var coverImage: UIImageView!
+    @IBOutlet weak var mediaStatusButton: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func pressPlayButton(_ sender: UITapGestureRecognizer) {
+        if mediaStatusButton.image == UIImage(named: "play") {
+            mediaStatusButton.image = UIImage(named: "pause")
+        } else {
+            mediaStatusButton.image = UIImage(named: "play")
+        }
+    }
+    
+    @IBAction func pressPreviousButton(_ sender: UITapGestureRecognizer) {
+        print("previous song")
+    }
+    
+    @IBAction func pressNextButton(_ sender: UITapGestureRecognizer) {
+        print("next song")
+    }
+    
     
 
     /*
