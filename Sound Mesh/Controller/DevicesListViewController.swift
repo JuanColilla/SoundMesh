@@ -9,6 +9,8 @@
 import UIKit
 
 class DevicesListViewController: UITableViewController {
+    
+    let meshManager: MeshManager = MeshManager(mode: 0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,7 @@ class DevicesListViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return meshManager.obtainPeers().count
     }
 
     
@@ -58,7 +60,7 @@ class DevicesListViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 

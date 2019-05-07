@@ -23,6 +23,11 @@
 		0DE5C8182273D89A000F4970 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE5C8172273D89A000F4970 /* MultipeerConnectivity.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0DE5C81A2273E991000F4970 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C8192273E991000F4970 /* MediaManager.swift */; };
 		0DE5C81C2273E9A1000F4970 /* OratorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C81B2273E9A1000F4970 /* OratorManager.swift */; };
+		0DF1B138227FA09600606F80 /* medicine.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B133227FA09500606F80 /* medicine.m4a */; };
+		0DF1B139227FA09600606F80 /* BigGirlsCry.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B134227FA09600606F80 /* BigGirlsCry.m4a */; };
+		0DF1B13A227FA09600606F80 /* FallingDown.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B135227FA09600606F80 /* FallingDown.m4a */; };
+		0DF1B13B227FA09600606F80 /* Avalanche.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B136227FA09600606F80 /* Avalanche.m4a */; };
+		0DF1B13C227FA09600606F80 /* FoolsParadise.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B137227FA09600606F80 /* FoolsParadise.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		0DE5C8172273D89A000F4970 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		0DE5C8192273E991000F4970 /* MediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
 		0DE5C81B2273E9A1000F4970 /* OratorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OratorManager.swift; sourceTree = "<group>"; };
+		0DF1B133227FA09500606F80 /* medicine.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = medicine.m4a; sourceTree = "<group>"; };
+		0DF1B134227FA09600606F80 /* BigGirlsCry.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigGirlsCry.m4a; sourceTree = "<group>"; };
+		0DF1B135227FA09600606F80 /* FallingDown.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingDown.m4a; sourceTree = "<group>"; };
+		0DF1B136227FA09600606F80 /* Avalanche.m4a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Avalanche.m4a; sourceTree = "<group>"; };
+		0DF1B137227FA09600606F80 /* FoolsParadise.m4a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FoolsParadise.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,7 @@
 				0DD05E2D2256D42E0086D3BA /* View */,
 				0DD05E2E2256D4380086D3BA /* Controller */,
 				0D3D06D222298F7200B42DBC /* Info.plist */,
+				0DF1B13D227FA0A000606F80 /* Media */,
 			);
 			path = "Sound Mesh";
 			sourceTree = "<group>";
@@ -129,6 +140,18 @@
 				0D111410225B9EAA008C64A7 /* MediaViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0DF1B13D227FA0A000606F80 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				0DF1B136227FA09600606F80 /* Avalanche.m4a */,
+				0DF1B134227FA09600606F80 /* BigGirlsCry.m4a */,
+				0DF1B135227FA09600606F80 /* FallingDown.m4a */,
+				0DF1B137227FA09600606F80 /* FoolsParadise.m4a */,
+				0DF1B133227FA09500606F80 /* medicine.m4a */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,9 +212,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF1B13A227FA09600606F80 /* FallingDown.m4a in Resources */,
+				0DF1B13B227FA09600606F80 /* Avalanche.m4a in Resources */,
 				0D3D06D122298F7200B42DBC /* LaunchScreen.storyboard in Resources */,
 				0D1D98A52267A0F1004EF6AC /* Assets.xcassets in Resources */,
+				0DF1B138227FA09600606F80 /* medicine.m4a in Resources */,
+				0DF1B13C227FA09600606F80 /* FoolsParadise.m4a in Resources */,
 				0D3D06CC22298F7000B42DBC /* Main.storyboard in Resources */,
+				0DF1B139227FA09600606F80 /* BigGirlsCry.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
