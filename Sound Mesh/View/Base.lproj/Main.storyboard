@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K5C-5w-mja">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="206-oq-n6i">
-                                <rect key="frame" x="67" y="193.66666666666669" width="241" height="59"/>
+                                <rect key="frame" x="67" y="133" width="241" height="59"/>
                                 <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="Hm1-ZR-RCp"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmR-2R-UL2">
-                                <rect key="frame" x="67" y="472" width="241" height="59"/>
+                                <rect key="frame" x="67" y="411.5" width="241" height="59"/>
                                 <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="ncG-45-bUT"/>
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-IR-Hqm">
-                                <rect key="frame" x="67" y="332.66666666666669" width="241" height="59"/>
+                                <rect key="frame" x="67" y="272" width="241" height="59"/>
                                 <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="ufu-Pj-PDz"/>
@@ -97,24 +97,24 @@
         <!--Gestión de tu malla-->
         <scene sceneID="aKm-PK-NBr">
             <objects>
-                <viewController id="lZp-ca-EA1" customClass="MeshManagementViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lZp-ca-EA1" customClass="DevicesListViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MBY-E2-0G2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="09x-sm-2sl">
-                                <rect key="frame" x="16" y="22" width="343" height="492"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="09x-sm-2sl" userLabel="Device List Table View">
+                                <rect key="frame" x="16" y="22" width="343" height="405"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="7lG-Gt-XI0" style="IBUITableViewCellStyleDefault" id="qV1-S1-8gM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="7lG-Gt-XI0" style="IBUITableViewCellStyleDefault" id="qV1-S1-8gM" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qV1-S1-8gM" id="eX9-bu-Rod">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qV1-S1-8gM" id="eX9-bu-Rod" userLabel="Cell" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7lG-Gt-XI0">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -122,6 +122,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="title" destination="7lG-Gt-XI0" id="4fX-OJ-jd4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <userDefinedRuntimeAttributes>
@@ -132,7 +135,10 @@
                                 </userDefinedRuntimeAttributes>
                             </tableView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-KR-Asg">
-                                <rect key="frame" x="16" y="530" width="343" height="94"/>
+                                <rect key="frame" x="16" y="443" width="343" height="94"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="XRG-U4-TYy"/>
                                 </constraints>
@@ -170,18 +176,18 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
             <objects>
                 <viewController id="1Me-cB-FgU" customClass="MediaViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XGM-og-t5f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CDCover1" translatesAutoresizingMaskIntoConstraints="NO" id="9Tc-MG-Her">
-                                <rect key="frame" x="32.666666666666657" y="20" width="310" height="310"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover" translatesAutoresizingMaskIntoConstraints="NO" id="9Tc-MG-Her">
+                                <rect key="frame" x="32.5" y="20" width="310" height="310"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="310" id="AB4-e6-CHB"/>
-                                    <constraint firstAttribute="height" constant="310" id="qlk-u5-NS9"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="310" id="3Jf-6I-UAT"/>
+                                    <constraint firstAttribute="height" constant="310" id="xe9-ow-1Nh"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="dvY-cC-ydK">
-                                <rect key="frame" x="268" y="470" width="50" height="48"/>
+                                <rect key="frame" x="267" y="434" width="50" height="48"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="CnY-AU-WvP"/>
@@ -192,7 +198,7 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="previous" translatesAutoresizingMaskIntoConstraints="NO" id="fk8-S3-flZ">
-                                <rect key="frame" x="57" y="470" width="50" height="48"/>
+                                <rect key="frame" x="57" y="434" width="50" height="48"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="jz5-hl-mKD"/>
@@ -203,7 +209,7 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="d7O-Vh-5gb">
-                                <rect key="frame" x="137.66666666666666" y="472" width="100" height="45"/>
+                                <rect key="frame" x="137.5" y="436" width="100" height="45"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7Mb-xo-mD8"/>
@@ -213,21 +219,31 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                     <outletCollection property="gestureRecognizers" destination="Ns3-Ou-gmm" appends="YES" id="pvm-83-6TA"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-CQ-nWX">
+                                <rect key="frame" x="32" y="370.5" width="310" height="23.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="bottom" secondItem="dvY-cC-ydK" secondAttribute="bottom" constant="123" id="9ND-eC-XLH"/>
-                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="bottom" secondItem="fk8-S3-flZ" secondAttribute="bottom" constant="123" id="Dyk-UD-6bW"/>
-                            <constraint firstItem="d7O-Vh-5gb" firstAttribute="top" secondItem="9Tc-MG-Her" secondAttribute="bottom" constant="142" id="G2L-OR-2mf"/>
-                            <constraint firstItem="fk8-S3-flZ" firstAttribute="top" secondItem="9Tc-MG-Her" secondAttribute="bottom" constant="140" id="H3d-dG-Xp3"/>
-                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="trailing" secondItem="dvY-cC-ydK" secondAttribute="trailing" constant="57" id="Jwl-71-tXI"/>
-                            <constraint firstItem="dvY-cC-ydK" firstAttribute="top" secondItem="9Tc-MG-Her" secondAttribute="bottom" constant="140" id="WUJ-iH-B3D"/>
-                            <constraint firstItem="9Tc-MG-Her" firstAttribute="centerX" secondItem="XGM-og-t5f" secondAttribute="centerX" id="YIQ-Bj-2TF"/>
+                            <constraint firstItem="9Tc-MG-Her" firstAttribute="leading" secondItem="NPu-ZX-8iz" secondAttribute="leading" constant="32.666666666666657" id="5Ak-rd-AZ0"/>
+                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="bottom" secondItem="dvY-cC-ydK" secondAttribute="bottom" constant="72" id="9ND-eC-XLH"/>
+                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="bottom" secondItem="fk8-S3-flZ" secondAttribute="bottom" constant="72" id="Dyk-UD-6bW"/>
+                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="trailing" secondItem="dvY-cC-ydK" secondAttribute="trailing" constant="58" id="Jwl-71-tXI"/>
+                            <constraint firstItem="d7O-Vh-5gb" firstAttribute="top" secondItem="fLe-CQ-nWX" secondAttribute="bottom" constant="42" id="Lgu-NI-uiA"/>
+                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="trailing" secondItem="fLe-CQ-nWX" secondAttribute="trailing" constant="33" id="Oqp-fg-DdY"/>
                             <constraint firstItem="fk8-S3-flZ" firstAttribute="leading" secondItem="NPu-ZX-8iz" secondAttribute="leading" constant="57" id="bYa-3a-NWA"/>
-                            <constraint firstItem="9Tc-MG-Her" firstAttribute="top" secondItem="NPu-ZX-8iz" secondAttribute="top" constant="20" id="d2M-z1-TFI"/>
+                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="trailing" secondItem="9Tc-MG-Her" secondAttribute="trailing" constant="32.333333333333371" id="ens-ql-l2l"/>
+                            <constraint firstItem="9Tc-MG-Her" firstAttribute="top" secondItem="NPu-ZX-8iz" secondAttribute="top" constant="20" id="heR-T1-Qbz"/>
                             <constraint firstItem="d7O-Vh-5gb" firstAttribute="centerX" secondItem="XGM-og-t5f" secondAttribute="centerX" id="mOd-hI-HXI"/>
-                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="bottom" secondItem="d7O-Vh-5gb" secondAttribute="bottom" constant="124" id="zb9-ZK-XOw"/>
+                            <constraint firstItem="fLe-CQ-nWX" firstAttribute="leading" secondItem="NPu-ZX-8iz" secondAttribute="leading" constant="32" id="rg9-73-BKF"/>
+                            <constraint firstItem="NPu-ZX-8iz" firstAttribute="bottom" secondItem="d7O-Vh-5gb" secondAttribute="bottom" constant="73" id="zb9-ZK-XOw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NPu-ZX-8iz"/>
                     </view>
@@ -236,6 +252,7 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                     <connections>
                         <outlet property="coverImage" destination="9Tc-MG-Her" id="xAE-Eh-NMK"/>
                         <outlet property="mediaStatusButton" destination="d7O-Vh-5gb" id="6p2-y0-QyU"/>
+                        <outlet property="songTitle" destination="fLe-CQ-nWX" id="FtC-dQ-P25"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9S-OK-vzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,7 +272,7 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4916" y="-1094.3349753694581"/>
+            <point key="canvasLocation" x="4916" y="-1096.1019490254873"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DTt-2N-MaO">
@@ -280,40 +297,11 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
             <objects>
                 <viewController id="J8x-v2-ZbI" customClass="MeshDiscoveryViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uFE-fL-OC2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OEM-9Q-HkJ">
-                                <rect key="frame" x="16" y="22" width="343" height="527"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="wu7-7e-cuZ" style="IBUITableViewCellStyleDefault" id="Mb1-Ub-qTt">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mb1-Ub-qTt" id="V2D-uL-Y2I">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wu7-7e-cuZ">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.666666666666664"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
-                                </userDefinedRuntimeAttributes>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uf-gs-rNN">
-                                <rect key="frame" x="41" y="612" width="293" height="49"/>
+                                <rect key="frame" x="41" y="525" width="293" height="49"/>
                                 <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="kvb-gS-5Ta"/>
@@ -330,9 +318,12 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="¿No encuentras tu malla? Crea tú una." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rne-fV-IDX">
-                                <rect key="frame" x="16" y="567" width="343" height="37"/>
+                                <rect key="frame" x="16" y="480" width="343" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="l2e-aD-uJL"/>
                                 </constraints>
@@ -340,37 +331,70 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover" translatesAutoresizingMaskIntoConstraints="NO" id="8Ja-JX-ozy">
+                                <rect key="frame" x="32" y="13" width="310" height="310"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="Gep-r5-iZc"/>
+                                    <constraint firstAttribute="width" constant="310" id="qKL-rO-SpA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEk-Pb-SKZ">
+                                <rect key="frame" x="150" y="248" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="6I6-tK-DwQ"/>
+                                </constraints>
+                                <state key="normal" title="Buscar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="38"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchMesh:" destination="J8x-v2-ZbI" eventType="touchUpInside" id="Wfh-6S-tar"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9uf-gs-rNN" firstAttribute="top" secondItem="rne-fV-IDX" secondAttribute="bottom" constant="8" id="0v2-hH-m06"/>
                             <constraint firstItem="rne-fV-IDX" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="16" id="6RA-or-oTN"/>
                             <constraint firstItem="o2Q-9T-Uqq" firstAttribute="trailing" secondItem="rne-fV-IDX" secondAttribute="trailing" constant="16" id="Bhh-Nc-TxR"/>
-                            <constraint firstItem="OEM-9Q-HkJ" firstAttribute="top" secondItem="o2Q-9T-Uqq" secondAttribute="top" constant="22" id="MTq-Fe-JMi"/>
-                            <constraint firstItem="OEM-9Q-HkJ" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="16" id="NKJ-GV-fga"/>
                             <constraint firstItem="o2Q-9T-Uqq" firstAttribute="trailing" secondItem="9uf-gs-rNN" secondAttribute="trailing" constant="41" id="WZW-vm-XtK"/>
-                            <constraint firstItem="rne-fV-IDX" firstAttribute="top" secondItem="OEM-9Q-HkJ" secondAttribute="bottom" constant="18" id="ZUm-Dn-Q6s"/>
                             <constraint firstItem="o2Q-9T-Uqq" firstAttribute="bottom" secondItem="9uf-gs-rNN" secondAttribute="bottom" constant="29" id="eh1-zq-5e6"/>
+                            <constraint firstItem="8Ja-JX-ozy" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="32" id="jgk-rD-i2K"/>
                             <constraint firstItem="9uf-gs-rNN" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="41" id="juN-CG-etl"/>
-                            <constraint firstItem="OEM-9Q-HkJ" firstAttribute="centerX" secondItem="uFE-fL-OC2" secondAttribute="centerX" id="qf7-aI-aRK"/>
-                            <constraint firstItem="o2Q-9T-Uqq" firstAttribute="trailing" secondItem="OEM-9Q-HkJ" secondAttribute="trailing" constant="16" id="tuZ-kS-CDG"/>
+                            <constraint firstItem="TEk-Pb-SKZ" firstAttribute="centerX" secondItem="rne-fV-IDX" secondAttribute="centerX" id="lgr-1f-KEP"/>
+                            <constraint firstItem="TEk-Pb-SKZ" firstAttribute="top" secondItem="o2Q-9T-Uqq" secondAttribute="top" constant="248" id="mcs-PB-G2t"/>
+                            <constraint firstItem="o2Q-9T-Uqq" firstAttribute="trailing" secondItem="8Ja-JX-ozy" secondAttribute="trailing" constant="33" id="nti-q9-oBk"/>
+                            <constraint firstItem="8Ja-JX-ozy" firstAttribute="top" secondItem="o2Q-9T-Uqq" secondAttribute="top" constant="13" id="x6s-D3-OCM"/>
+                            <constraint firstItem="TEk-Pb-SKZ" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="150" id="z28-5y-L43"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o2Q-9T-Uqq"/>
                     </view>
                     <navigationItem key="navigationItem" title="Mallas disponibles" id="9sl-vF-MdR">
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="Kq6-y6-iS8"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="SearchButton" destination="TEk-Pb-SKZ" id="xbd-I1-c1u"/>
+                        <outlet property="songCover" destination="8Ja-JX-ozy" id="xbG-5L-DIQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bs-fX-oWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3193" y="43"/>
+            <point key="canvasLocation" x="3192.8000000000002" y="42.728635682158924"/>
         </scene>
         <!--Orador-->
         <scene sceneID="fnl-Qb-4ar">
             <objects>
                 <viewController id="Wed-Rg-0kv" customClass="OratorViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5v6-rD-WyC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mic" highlightedImage="Orator Mic" translatesAutoresizingMaskIntoConstraints="NO" id="pPm-g0-v7u">
@@ -385,18 +409,18 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </connections>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W2x-dq-iSY">
-                                <rect key="frame" x="16" y="347" width="343" height="252"/>
+                                <rect key="frame" x="16" y="347" width="343" height="165"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ZaH-on-MHz" style="IBUITableViewCellStyleDefault" id="Qg3-DL-puI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ZaH-on-MHz" style="IBUITableViewCellStyleDefault" id="Qg3-DL-puI" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qg3-DL-puI" id="hCl-WM-m54">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qg3-DL-puI" id="hCl-WM-m54" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZaH-on-MHz">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -416,6 +440,9 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-em-IHx">
                                 <rect key="frame" x="16" y="22" width="343" height="102"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <string key="text">El audio captado por éste dispositivo será emitido por los dispositivos que se unan a ésta malla.
 
 Pulsa el micrófono para activar/desactivar la función de orador:</string>
@@ -424,8 +451,11 @@ Pulsa el micrófono para activar/desactivar la función de orador:</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Puedes eliminar dispositivos de ésta malla de forma individual." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-Bi-7xL">
-                                <rect key="frame" x="16" y="607" width="343" height="47"/>
+                                <rect key="frame" x="16" y="520" width="343" height="47"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="02O-g0-iUx"/>
                                 </constraints>
@@ -481,7 +511,7 @@ Pulsa el micrófono para activar/desactivar la función de orador:</string>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yE6-h6-Iyh">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -498,7 +528,7 @@ Pulsa el micrófono para activar/desactivar la función de orador:</string>
         </scene>
     </scenes>
     <resources>
-        <image name="CDCover1" width="450" height="462"/>
+        <image name="Cover" width="200" height="200"/>
         <image name="Mesh" width="25" height="18"/>
         <image name="Mic" width="300" height="265"/>
         <image name="Orator Mic" width="42" height="66"/>
@@ -508,6 +538,6 @@ Pulsa el micrófono para activar/desactivar la función de orador:</string>
         <image name="previous" width="171" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="b0x-Fe-V0d"/>
+        <segue reference="RdA-wm-SvE"/>
     </inferredMetricsTieBreakers>
 </document>

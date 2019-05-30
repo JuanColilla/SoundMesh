@@ -7,26 +7,40 @@
 //
 
 import UIKit
+import AVFoundation
 
-class OratorViewController: UIViewController {
+class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
+    
+    var recordingSession: AVAudioSession!
     
     @IBOutlet weak var micImage: UIImageView!
     
-    @IBAction func tapMicImage(_ sender: UITapGestureRecognizer) {
-        // TAP GESTURE RECOGNIZER?
-        // https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_tap_gestures#overview
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         micImage.image = UIImage(named: "Mic")
         
+        recordingSession = AVAudioSession.sharedInstance()
         
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func micImageTap(_ sender: UITapGestureRecognizer) {
+        
+        do {
+            try recordingSession.setCategory(.record, mode: .spokenAudio)
+            try recordingSession.setActive(true)
+            //recordingSession.requestRecordPermission(<#T##response: PermissionBlock##PermissionBlock##(Bool) -> Void#>) 
+            
+        } catch {
+            print("No se han dado permisos.")
+        }
+
+        
+        
+        
+        
         if micImage.image == UIImage(named: "Mic") {
             micImage.image = UIImage(named: "RedMic")
         } else {
@@ -43,5 +57,12 @@ class OratorViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    
+    
+    
+    
 
 }

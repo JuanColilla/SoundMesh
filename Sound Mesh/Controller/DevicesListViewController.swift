@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import MultipeerConnectivity
 
 class DevicesListViewController: UITableViewController {
+
+    var connectedPeerIDs: [String] = [String()]
+    var session: MCSession!
     
-    let meshManager: MeshManager = MeshManager(mode: 0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.obtainPeers()
+        tableView.reloadData()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,16 +36,23 @@ class DevicesListViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return meshManager.obtainPeers().count
+       return connectedPeerIDs.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! DeviceListViewCell
 
-        // Configure the cell...
+        let peer: String = connectedPeerIDs[indexPath.row]
+        cell.title.text = peer
 
         return cell
+    }
+    
+    func obtainPeers() {
+        for peer in session.connectedPeers {
+            connectedPeerIDs.append(peer.displayName)
+        }
     }
     
 
@@ -88,5 +100,5 @@ class DevicesListViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

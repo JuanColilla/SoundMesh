@@ -11,23 +11,15 @@
 		0D111411225B9EAA008C64A7 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D111410225B9EAA008C64A7 /* MediaViewController.swift */; };
 		0D1D98A52267A0F1004EF6AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D1D98A42267A0F1004EF6AC /* Assets.xcassets */; };
 		0D3D06C722298F7000B42DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D06C622298F7000B42DBC /* AppDelegate.swift */; };
-		0D3D06C922298F7000B42DBC /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D06C822298F7000B42DBC /* InitialScreenViewController.swift */; };
 		0D3D06CC22298F7000B42DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3D06CA22298F7000B42DBC /* Main.storyboard */; };
 		0D3D06D122298F7200B42DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3D06CF22298F7200B42DBC /* LaunchScreen.storyboard */; };
-		0DD05E302256DB470086D3BA /* DevicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E2F2256DB470086D3BA /* DevicesListViewController.swift */; };
 		0DD05E322256DBDC0086D3BA /* DeviceListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */; };
-		0DD05E342256DC0D0086D3BA /* MeshManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E332256DC0D0086D3BA /* MeshManagementViewController.swift */; };
 		0DD05E362256DC260086D3BA /* MeshDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */; };
 		0DD05E382256DC370086D3BA /* OratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E372256DC370086D3BA /* OratorViewController.swift */; };
-		0DE5C8162273D82D000F4970 /* MeshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C8152273D82D000F4970 /* MeshManager.swift */; };
+		0DE565C222839957005480DB /* DevicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE565C122839957005480DB /* DevicesListViewController.swift */; };
 		0DE5C8182273D89A000F4970 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE5C8172273D89A000F4970 /* MultipeerConnectivity.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0DE5C81A2273E991000F4970 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C8192273E991000F4970 /* MediaManager.swift */; };
 		0DE5C81C2273E9A1000F4970 /* OratorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C81B2273E9A1000F4970 /* OratorManager.swift */; };
-		0DF1B138227FA09600606F80 /* medicine.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B133227FA09500606F80 /* medicine.m4a */; };
-		0DF1B139227FA09600606F80 /* BigGirlsCry.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B134227FA09600606F80 /* BigGirlsCry.m4a */; };
-		0DF1B13A227FA09600606F80 /* FallingDown.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B135227FA09600606F80 /* FallingDown.m4a */; };
-		0DF1B13B227FA09600606F80 /* Avalanche.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B136227FA09600606F80 /* Avalanche.m4a */; };
-		0DF1B13C227FA09600606F80 /* FoolsParadise.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0DF1B137227FA09600606F80 /* FoolsParadise.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,24 +28,16 @@
 		0D1D98A42267A0F1004EF6AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D3D06C322298F7000B42DBC /* Sound Mesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sound Mesh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3D06C622298F7000B42DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D3D06C822298F7000B42DBC /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
 		0D3D06CB22298F7000B42DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D3D06D022298F7200B42DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D3D06D222298F7200B42DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DD05E2F2256DB470086D3BA /* DevicesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListViewController.swift; sourceTree = "<group>"; };
 		0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewCell.swift; sourceTree = "<group>"; };
-		0DD05E332256DC0D0086D3BA /* MeshManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshManagementViewController.swift; sourceTree = "<group>"; };
 		0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshDiscoveryViewController.swift; sourceTree = "<group>"; };
 		0DD05E372256DC370086D3BA /* OratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OratorViewController.swift; sourceTree = "<group>"; };
-		0DE5C8152273D82D000F4970 /* MeshManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshManager.swift; sourceTree = "<group>"; };
+		0DE565C122839957005480DB /* DevicesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesListViewController.swift; sourceTree = "<group>"; };
 		0DE5C8172273D89A000F4970 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		0DE5C8192273E991000F4970 /* MediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
 		0DE5C81B2273E9A1000F4970 /* OratorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OratorManager.swift; sourceTree = "<group>"; };
-		0DF1B133227FA09500606F80 /* medicine.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = medicine.m4a; sourceTree = "<group>"; };
-		0DF1B134227FA09600606F80 /* BigGirlsCry.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigGirlsCry.m4a; sourceTree = "<group>"; };
-		0DF1B135227FA09600606F80 /* FallingDown.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingDown.m4a; sourceTree = "<group>"; };
-		0DF1B136227FA09600606F80 /* Avalanche.m4a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Avalanche.m4a; sourceTree = "<group>"; };
-		0DF1B137227FA09600606F80 /* FoolsParadise.m4a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FoolsParadise.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +87,6 @@
 				0DD05E2D2256D42E0086D3BA /* View */,
 				0DD05E2E2256D4380086D3BA /* Controller */,
 				0D3D06D222298F7200B42DBC /* Info.plist */,
-				0DF1B13D227FA0A000606F80 /* Media */,
 			);
 			path = "Sound Mesh";
 			sourceTree = "<group>";
@@ -111,7 +94,6 @@
 		0DD05E2C2256D41A0086D3BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0DE5C8152273D82D000F4970 /* MeshManager.swift */,
 				0DE5C8192273E991000F4970 /* MediaManager.swift */,
 				0DE5C81B2273E9A1000F4970 /* OratorManager.swift */,
 			);
@@ -131,27 +113,13 @@
 		0DD05E2E2256D4380086D3BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0D3D06C822298F7000B42DBC /* InitialScreenViewController.swift */,
-				0DD05E332256DC0D0086D3BA /* MeshManagementViewController.swift */,
-				0DD05E2F2256DB470086D3BA /* DevicesListViewController.swift */,
+				0D111410225B9EAA008C64A7 /* MediaViewController.swift */,
+				0DE565C122839957005480DB /* DevicesListViewController.swift */,
 				0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */,
 				0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */,
 				0DD05E372256DC370086D3BA /* OratorViewController.swift */,
-				0D111410225B9EAA008C64A7 /* MediaViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		0DF1B13D227FA0A000606F80 /* Media */ = {
-			isa = PBXGroup;
-			children = (
-				0DF1B136227FA09600606F80 /* Avalanche.m4a */,
-				0DF1B134227FA09600606F80 /* BigGirlsCry.m4a */,
-				0DF1B135227FA09600606F80 /* FallingDown.m4a */,
-				0DF1B137227FA09600606F80 /* FoolsParadise.m4a */,
-				0DF1B133227FA09500606F80 /* medicine.m4a */,
-			);
-			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +154,11 @@
 				TargetAttributes = {
 					0D3D06C222298F7000B42DBC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -212,14 +185,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF1B13A227FA09600606F80 /* FallingDown.m4a in Resources */,
-				0DF1B13B227FA09600606F80 /* Avalanche.m4a in Resources */,
 				0D3D06D122298F7200B42DBC /* LaunchScreen.storyboard in Resources */,
 				0D1D98A52267A0F1004EF6AC /* Assets.xcassets in Resources */,
-				0DF1B138227FA09600606F80 /* medicine.m4a in Resources */,
-				0DF1B13C227FA09600606F80 /* FoolsParadise.m4a in Resources */,
 				0D3D06CC22298F7000B42DBC /* Main.storyboard in Resources */,
-				0DF1B139227FA09600606F80 /* BigGirlsCry.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,16 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE565C222839957005480DB /* DevicesListViewController.swift in Sources */,
 				0DD05E362256DC260086D3BA /* MeshDiscoveryViewController.swift in Sources */,
-				0DD05E302256DB470086D3BA /* DevicesListViewController.swift in Sources */,
 				0DE5C81C2273E9A1000F4970 /* OratorManager.swift in Sources */,
-				0D3D06C922298F7000B42DBC /* InitialScreenViewController.swift in Sources */,
-				0DE5C8162273D82D000F4970 /* MeshManager.swift in Sources */,
 				0DE5C81A2273E991000F4970 /* MediaManager.swift in Sources */,
 				0D111411225B9EAA008C64A7 /* MediaViewController.swift in Sources */,
 				0DD05E322256DBDC0086D3BA /* DeviceListViewCell.swift in Sources */,
 				0DD05E382256DC370086D3BA /* OratorViewController.swift in Sources */,
-				0DD05E342256DC0D0086D3BA /* MeshManagementViewController.swift in Sources */,
 				0D3D06C722298F7000B42DBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
