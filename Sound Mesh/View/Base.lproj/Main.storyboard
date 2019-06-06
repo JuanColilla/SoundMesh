@@ -19,13 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="206-oq-n6i">
-                                <rect key="frame" x="67" y="133" width="241" height="59"/>
+                                <rect key="frame" x="67" y="135" width="241" height="59"/>
                                 <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="Hm1-ZR-RCp"/>
+                                    <constraint firstAttribute="width" constant="241" id="Nae-Kk-cBd"/>
+                                    <constraint firstAttribute="height" constant="59" id="Olp-Zg-pAA"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Crear una malla">
+                                <state key="normal" title="Reproductor de música">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -36,13 +37,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmR-2R-UL2">
-                                <rect key="frame" x="67" y="411.5" width="241" height="59"/>
+                                <rect key="frame" x="67" y="272" width="241" height="59"/>
                                 <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="ncG-45-bUT"/>
+                                    <constraint firstAttribute="width" constant="241" id="9Ui-gh-d6y"/>
+                                    <constraint firstAttribute="height" constant="59" id="LXk-6q-AdP"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Modo orador">
+                                <state key="normal" title="Orador">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -52,14 +54,31 @@
                                     <segue destination="Wed-Rg-0kv" kind="show" id="Xg1-Pv-Sff"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-IR-Hqm">
-                                <rect key="frame" x="67" y="272" width="241" height="59"/>
-                                <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anfitrión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEh-hb-1Ni">
+                                <rect key="frame" x="144" y="37" width="87.5" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huésped" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFD-AC-Mii">
+                                <rect key="frame" x="92.5" y="385" width="190" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="ufu-Pj-PDz"/>
+                                    <constraint firstAttribute="height" constant="29" id="44A-4H-sqb"/>
+                                    <constraint firstAttribute="width" constant="190" id="rpf-wq-WvR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-IR-Hqm">
+                                <rect key="frame" x="67" y="458" width="241" height="59"/>
+                                <color key="backgroundColor" red="0.75377182005837562" green="0.078075384498652617" blue="0.017189146184512869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="N6d-Wm-2XW"/>
+                                    <constraint firstAttribute="height" constant="59" id="fJk-dJ-ceJ"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Unirse a una malla">
+                                <state key="normal" title="Unirse a una sesión">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -72,16 +91,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="206-oq-n6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Bsv-Rw-WI9"/>
-                            <constraint firstItem="Ds9-IR-Hqm" firstAttribute="top" secondItem="206-oq-n6i" secondAttribute="bottom" constant="80" id="Cp5-Ph-DJt"/>
-                            <constraint firstItem="rmR-2R-UL2" firstAttribute="top" secondItem="Ds9-IR-Hqm" secondAttribute="bottom" constant="80.333333333333314" id="Oin-wA-3su"/>
-                            <constraint firstItem="Ds9-IR-Hqm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VrM-PU-oJM"/>
-                            <constraint firstItem="Ds9-IR-Hqm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ast-6i-2Tm"/>
-                            <constraint firstItem="rmR-2R-UL2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="bdi-DS-v8e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ds9-IR-Hqm" secondAttribute="trailing" constant="67" id="fCA-Vw-5Or"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rmR-2R-UL2" secondAttribute="trailing" constant="67" id="fIa-7r-XW2"/>
-                            <constraint firstItem="Ds9-IR-Hqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="lRt-22-vKy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="206-oq-n6i" secondAttribute="trailing" constant="67" id="pjp-6W-gup"/>
+                            <constraint firstItem="rmR-2R-UL2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="444-hG-ASI"/>
+                            <constraint firstItem="cFD-AC-Mii" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bz7-sa-bK7"/>
+                            <constraint firstItem="206-oq-n6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Dfw-g1-Ds1"/>
+                            <constraint firstItem="rmR-2R-UL2" firstAttribute="trailing" secondItem="Ds9-IR-Hqm" secondAttribute="trailing" id="MhS-yN-5ZX"/>
+                            <constraint firstItem="cFD-AC-Mii" firstAttribute="top" secondItem="rmR-2R-UL2" secondAttribute="bottom" constant="54" id="SVk-1i-Y9t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="206-oq-n6i" secondAttribute="trailing" constant="67" id="Tah-zc-6rR"/>
+                            <constraint firstItem="rmR-2R-UL2" firstAttribute="leading" secondItem="Ds9-IR-Hqm" secondAttribute="leading" id="WhT-Gp-h3i"/>
+                            <constraint firstItem="rmR-2R-UL2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfT-pC-lLD"/>
+                            <constraint firstItem="rmR-2R-UL2" firstAttribute="centerX" secondItem="VEh-hb-1Ni" secondAttribute="centerX" id="fe3-Hc-MOf"/>
+                            <constraint firstItem="206-oq-n6i" firstAttribute="top" secondItem="VEh-hb-1Ni" secondAttribute="bottom" constant="68" id="h5W-2u-njD"/>
+                            <constraint firstItem="rmR-2R-UL2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="hyZ-a4-k1z"/>
+                            <constraint firstItem="rmR-2R-UL2" firstAttribute="centerX" secondItem="cFD-AC-Mii" secondAttribute="centerX" id="jE9-Zk-kpM"/>
+                            <constraint firstItem="rmR-2R-UL2" firstAttribute="top" secondItem="206-oq-n6i" secondAttribute="bottom" constant="78" id="kgv-l1-za2"/>
+                            <constraint firstItem="Ds9-IR-Hqm" firstAttribute="top" secondItem="cFD-AC-Mii" secondAttribute="bottom" constant="44" id="uEx-th-TI2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -97,7 +120,7 @@
         <!--Gestión de tu malla-->
         <scene sceneID="aKm-PK-NBr">
             <objects>
-                <viewController id="lZp-ca-EA1" customClass="DevicesListViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lZp-ca-EA1" customClass="DevicesListTableViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MBY-E2-0G2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,10 +129,10 @@
                                 <rect key="frame" x="16" y="22" width="343" height="405"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="7lG-Gt-XI0" style="IBUITableViewCellStyleDefault" id="qV1-S1-8gM" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="7lG-Gt-XI0" style="IBUITableViewCellStyleDefault" id="qV1-S1-8gM" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qV1-S1-8gM" id="eX9-bu-Rod" userLabel="Cell" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qV1-S1-8gM" id="eX9-bu-Rod" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -117,7 +140,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -166,6 +189,9 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                     </view>
                     <tabBarItem key="tabBarItem" title="Gestión de malla" image="Mesh" landscapeImage="Mesh" selectedImage="Mesh" id="P8x-xY-rne"/>
                     <navigationItem key="navigationItem" title="Gestión de tu malla" id="J8h-7W-YbD"/>
+                    <connections>
+                        <outlet property="peerTable" destination="09x-sm-2sl" id="fJH-g5-AYj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ah-Wa-rgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

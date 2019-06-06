@@ -15,6 +15,7 @@ class MediaViewController: UIViewController, MCSessionDelegate {
     let player = MediaManager()
     
     var connectedPeerIDs: [String] = [String()]
+    var tableViewTab: UITabBarController!
     
     // NCSession Variables:
     let peerID: MCPeerID = MCPeerID.init(displayName: UIDevice.current.name)
@@ -32,13 +33,18 @@ class MediaViewController: UIViewController, MCSessionDelegate {
         session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
         session.delegate = self
         self.createMesh()
+        /* ------------------------ UNDER CONSTRUCTION---------------------------------------------------------
+        
+        tableViewTab = self.tabBarController?.viewControllers[1] as DevicesListTableViewController -> 1) Necesito pasar la sesión de este controller al segundo controller de mi tabBarView para poder obtener los peerIDs. Parece que el prepareForSegue no funciona en este tipo de Views.
+ 
+    ----------------------------------------------------------------------------------------------------------*/
+        
         coverImage.image = UIImage(named: "Cover")
         player.preparePlayer()
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        self.disolveMesh()
+        //self.disolveMesh()
     }
     
     
@@ -103,21 +109,25 @@ class MediaViewController: UIViewController, MCSessionDelegate {
         }
     }
     
+    /* ------------------------ UNDER CONSTRUCTION---------------------------------------------------------
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let peersListView = segue.destination as? DevicesListTableViewController {
+            if let destinySession = self.session {
+                peersListView.session = destinySession
+                tableViewTab.session
+            }
+               /* for peer in session.connectedPeers {
+                    peersListView.connectedPeerIDs.append(peer.displayName)
+            } */
+        }
     }
+ 
+ ----------------------------------------------------------------------------------------------------------*/
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
     
     // MARK: -> Métodos del MCSessionDelegate
     

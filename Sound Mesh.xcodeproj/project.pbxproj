@@ -16,7 +16,7 @@
 		0DD05E322256DBDC0086D3BA /* DeviceListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */; };
 		0DD05E362256DC260086D3BA /* MeshDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */; };
 		0DD05E382256DC370086D3BA /* OratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD05E372256DC370086D3BA /* OratorViewController.swift */; };
-		0DE565C222839957005480DB /* DevicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE565C122839957005480DB /* DevicesListViewController.swift */; };
+		0DE565C222839957005480DB /* DevicesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE565C122839957005480DB /* DevicesListTableViewController.swift */; };
 		0DE5C8182273D89A000F4970 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE5C8172273D89A000F4970 /* MultipeerConnectivity.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0DE5C81A2273E991000F4970 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C8192273E991000F4970 /* MediaManager.swift */; };
 		0DE5C81C2273E9A1000F4970 /* OratorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5C81B2273E9A1000F4970 /* OratorManager.swift */; };
@@ -34,7 +34,7 @@
 		0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewCell.swift; sourceTree = "<group>"; };
 		0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshDiscoveryViewController.swift; sourceTree = "<group>"; };
 		0DD05E372256DC370086D3BA /* OratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OratorViewController.swift; sourceTree = "<group>"; };
-		0DE565C122839957005480DB /* DevicesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesListViewController.swift; sourceTree = "<group>"; };
+		0DE565C122839957005480DB /* DevicesListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesListTableViewController.swift; sourceTree = "<group>"; };
 		0DE5C8172273D89A000F4970 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		0DE5C8192273E991000F4970 /* MediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
 		0DE5C81B2273E9A1000F4970 /* OratorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OratorManager.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				0D111410225B9EAA008C64A7 /* MediaViewController.swift */,
-				0DE565C122839957005480DB /* DevicesListViewController.swift */,
+				0DE565C122839957005480DB /* DevicesListTableViewController.swift */,
 				0DD05E312256DBDC0086D3BA /* DeviceListViewCell.swift */,
 				0DD05E352256DC260086D3BA /* MeshDiscoveryViewController.swift */,
 				0DD05E372256DC370086D3BA /* OratorViewController.swift */,
@@ -154,6 +154,7 @@
 				TargetAttributes = {
 					0D3D06C222298F7000B42DBC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -198,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE565C222839957005480DB /* DevicesListViewController.swift in Sources */,
+				0DE565C222839957005480DB /* DevicesListTableViewController.swift in Sources */,
 				0DD05E362256DC260086D3BA /* MeshDiscoveryViewController.swift in Sources */,
 				0DE5C81C2273E9A1000F4970 /* OratorManager.swift in Sources */,
 				0DE5C81A2273E991000F4970 /* MediaManager.swift in Sources */,
@@ -359,7 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "juancolilla.Sound-Mesh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -376,7 +377,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "juancolilla.Sound-Mesh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

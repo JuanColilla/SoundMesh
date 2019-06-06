@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,15 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound Mesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg1-ww-KGx">
-                                <rect key="frame" x="33" y="200" width="309" height="57.666666666666686"/>
+                                <rect key="frame" x="39" y="305" width="297.5" height="57.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297.5" id="E3W-vg-pOQ"/>
+                                    <constraint firstAttribute="height" constant="57.5" id="nVb-j3-WOL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,10 +31,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Qg1-ww-KGx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="6BB-Bj-nbp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qg1-ww-KGx" secondAttribute="trailing" constant="33" id="JL9-Y1-deF"/>
-                            <constraint firstItem="Qg1-ww-KGx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UXc-xS-ECt"/>
-                            <constraint firstItem="Qg1-ww-KGx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="saA-DR-X3L"/>
+                            <constraint firstItem="Qg1-ww-KGx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OTp-hK-Niv"/>
+                            <constraint firstItem="Qg1-ww-KGx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZyF-kJ-7YV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

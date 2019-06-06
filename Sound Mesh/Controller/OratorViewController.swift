@@ -8,10 +8,12 @@
 
 import UIKit
 import AVFoundation
+import MultipeerConnectivity
 
 class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
     
     var recordingSession: AVAudioSession!
+    var micManager = OratorManager()
     
     @IBOutlet weak var micImage: UIImageView!
     
@@ -19,11 +21,7 @@ class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioReco
     override func viewDidLoad() {
         super.viewDidLoad()
         micImage.image = UIImage(named: "Mic")
-        
         recordingSession = AVAudioSession.sharedInstance()
-        
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func micImageTap(_ sender: UITapGestureRecognizer) {
@@ -31,38 +29,21 @@ class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioReco
         do {
             try recordingSession.setCategory(.record, mode: .spokenAudio)
             try recordingSession.setActive(true)
-            //recordingSession.requestRecordPermission(<#T##response: PermissionBlock##PermissionBlock##(Bool) -> Void#>) 
+            //recordingSession.requestRecordPermission(<#T##response: PermissionBlock##PermissionBlock##(Bool) -> Void#>) -> Ask for user permission on using microphone. / NOT FINNISHED
             
         } catch {
             print("No se han dado permisos.")
         }
-
-        
-        
-        
         
         if micImage.image == UIImage(named: "Mic") {
             micImage.image = UIImage(named: "RedMic")
+            micManager.startRecording()
         } else {
             micImage.image = UIImage(named: "Mic")
+            micManager.stopRecording()
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     
     
-    
-    
-    
-    
-
 }
