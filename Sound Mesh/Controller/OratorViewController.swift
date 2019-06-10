@@ -14,28 +14,22 @@ class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioReco
     
     var recordingSession: AVAudioSession!
     var micManager = OratorManager()
+    var permission = false
     
     @IBOutlet weak var micImage: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        micManager.setupRecorder(delegate: self)
         micImage.image = UIImage(named: "Mic")
         recordingSession = AVAudioSession.sharedInstance()
+        self.permission = micManager.prepareRecording(session: recordingSession)
     }
     
     @IBAction func micImageTap(_ sender: UITapGestureRecognizer) {
         
-        do {
-            try recordingSession.setCategory(.record, mode: .spokenAudio)
-            try recordingSession.setActive(true)
-            //recordingSession.requestRecordPermission(<#T##response: PermissionBlock##PermissionBlock##(Bool) -> Void#>) -> Ask for user permission on using microphone. / NOT FINNISHED
-            
-        } catch {
-            print("No se han dado permisos.")
-        }
-        
-        if micImage.image == UIImage(named: "Mic") {
+        if micImage.image == UIImage(named: "Mic") && permission {
             micImage.image = UIImage(named: "RedMic")
             micManager.startRecording()
         } else {
@@ -43,7 +37,5 @@ class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioReco
             micManager.stopRecording()
         }
     }
-    
-    
     
 }

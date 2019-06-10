@@ -56,6 +56,12 @@ class MediaManager {
         return musicPlayer.nowPlayingItem?.artwork?.image(at: size) ?? UIImage(named: "Cover")!
     }
     
+    func prepareJoinedPlayer(songTitle: String) {
+        let predicate = MPMediaPropertyPredicate(value: songTitle, forProperty: MPMediaItemPropertyTitle)
+        query.addFilterPredicate(predicate)
+        musicPlayer.setQueue(with: query) // Under construction
+        musicPlayer.prepareToPlay()
+    }
     
     func pause(){
         musicPlayer.pause()

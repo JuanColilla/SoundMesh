@@ -29,7 +29,6 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
         session.delegate = self
         self.SearchButton.isHidden = false
         self.SearchButton.isEnabled = true
-        
         self.songCover.isHidden = true
    
     }
@@ -48,12 +47,10 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
         self.present(mcBrowser, animated: true, completion: nil)
     }
     
-    func playReceivedSong(song: String, image: UIImage) {
+    func playReceivedSong(songTitle: String) {
         if player.requestLibraryAccess() {
-                player.setSongReceived(song: song)
-                player.playSong()
-                //songTitle.text = player.getTitle()
-                songCover.image = image
+               player.prepareJoinedPlayer(songTitle: songTitle)
+               player.playSong()
         }
     }
     
@@ -65,10 +62,12 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        let song = String(decoding: data, as: UTF8.self)
-        let image = UIImage(data: data)!
-        self.playReceivedSong(song: song, image: image)
-        
+        let songTitle = String(decoding: data, as: UTF8.self)
+        if (songTitle == "Pause") {
+            self.player.pause()
+        } else {
+            self.playReceivedSong(songTitle: songTitle)
+        }
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
@@ -87,7 +86,6 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
         dismiss(animated: true, completion: nil)
         self.SearchButton.isHidden = true
         self.SearchButton.isEnabled = false
-        
         self.songCover.isHidden = false
     }
     

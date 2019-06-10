@@ -11,8 +11,8 @@ import AVFoundation
 
 class OratorManager {
     
-    var microphone = AVAudioRecorder()
-    let player = AVAudioPlayer()
+    var microphone: AVAudioRecorder!
+    // let player: AVAudioPlayer!
     
     func setupRecorder(delegate: AVAudioRecorderDelegate) {
         
@@ -24,11 +24,33 @@ class OratorManager {
         let audioRUL = OratorManager.getFileURL()
         
         do {
-        try microphone = AVAudioRecorder(url: audioRUL, settings: recordSettings)
+            try microphone = AVAudioRecorder(url: audioRUL as URL, settings: recordSettings)
             microphone.delegate = delegate
         } catch {
             print("Fallo al grabar.")
         }
+    }
+    
+    func prepareRecording(session: AVAudioSession) -> Bool {
+        var grantedPermissions = false
+        do {
+            try session.setCategory(.record, mode: .spokenAudio)
+            try session.setActive(true)
+             // -> Ask for user permission on using microphone. / NOT FINNISHED
+            
+        } catch {
+            print("No se han dado permisos.")
+        }
+        
+        session.requestRecordPermission({(granted: Bool)-> Void in
+            if granted {
+                print(" granted")
+                grantedPermissions = true
+            }else{
+                print("not granted")
+            }
+        })
+        return grantedPermissions
     }
 
     
@@ -44,16 +66,15 @@ class OratorManager {
         
     }
     
-    
-    
-    class func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
+    class func getCacheDirectory() -> NSURL {
+        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory , FileManager.SearchPathDomainMask.userDomainMask, true)
+        return NSURL.init(fileURLWithPath: paths[0])
     }
     
-    class func getFileURL() -> URL {
-        return getDocumentsDirectory().appendingPathComponent("audioToStream.m4a")
+    class func getFileURL() -> NSURL {
+        let path = NSURL(string:"audioToStream.m4a", relativeTo: self.getCacheDirectory() as URL)  // getCacheDirectory() + "/audioFileName.m4a"
+        
+        return path!
     }
     
     

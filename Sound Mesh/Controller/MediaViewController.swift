@@ -92,21 +92,16 @@ class MediaViewController: UIViewController, MCSessionDelegate {
     }
     
     func sendData() {
-        let infoToSend = player.getSongURL()
-        //var dataToSend: Data =
-        if infoToSend != nil {
-        /* for peer in session.connectedPeers {
-            do {
-                try session.send(infoToSend, toPeers: [peer], with: .reliable)
-                // TESTING:
-                
-                //
-            
-            } catch {
-                print("Failed to send Data... JC")
-            }
-            } */
+        let infoToSend = player.getTitle()
+        if let dataToSend: Data = infoToSend.data(using: .utf8) {
+            for peer in session.connectedPeers {
+                do {
+                    try session.send(dataToSend, toPeers: [peer], with: .reliable)
+                } catch {
+                    print("Failed to send Data... JC")
+                }
         }
+    }
     }
     
     /* ------------------------ UNDER CONSTRUCTION---------------------------------------------------------
@@ -132,7 +127,7 @@ class MediaViewController: UIViewController, MCSessionDelegate {
     // MARK: -> Métodos del MCSessionDelegate
     
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
-   /*     switch state {
+        switch state {
         case .connected:
             connectedPeerIDs.append(peerID.displayName)
             
@@ -141,31 +136,26 @@ class MediaViewController: UIViewController, MCSessionDelegate {
             
         case .connecting:
             break
-        } */
+        @unknown default:
+            print("Do nothing...")
+        }
     }
     
-    func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
         
-    }
-    
-    func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
         
-    }
-    
-    func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) {
+        func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
+            
+        }
         
-    }
-    
-    func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
+        func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
+            
+        }
         
-    }
-    
-    func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
+        func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) {
+            
+        }
         
-    }
-    
-    func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
-        
-    }
-
+        func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
+            
+        }
 }
