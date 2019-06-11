@@ -11,12 +11,20 @@ import MultipeerConnectivity
 
 class DevicesListTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var connectedPeerIDs: [String] = [String()]
+    var connectedPeerIDs: [String] = [String]()
     var session: MCSession!
     
     @IBOutlet weak var peerTable: UITableView!
     
     let reuseIdentifier = "Cell"
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let mvc = self.tabBarController?.viewControllers?[0] as? MediaViewController{
+            connectedPeerIDs = mvc.connectedPeerIDs
+        }
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import AVFoundation
 import MediaPlayer
 
 class MediaManager {
@@ -17,6 +16,7 @@ class MediaManager {
     var query = MPMediaQuery()
     
     init() {
+        musicPlayer.prepareToPlay()
     }
     
     func requestLibraryAccess() -> Bool {
@@ -34,7 +34,7 @@ class MediaManager {
         let predicate = MPMediaPropertyPredicate(value: "Rock", forProperty: MPMediaItemPropertyGenre)
         query.addFilterPredicate(predicate)
         musicPlayer.setQueue(with: query)
-        musicPlayer.prepareToPlay()
+        //musicPlayer.prepareToPlay()
     }
     
     func playSong(){
@@ -45,13 +45,6 @@ class MediaManager {
         return musicPlayer.nowPlayingItem?.title ?? "Unavailable"
     }
     
-    func setSongReceived(song: String) {
-        let predicate = MPMediaPropertyPredicate(value: song, forProperty: MPMediaItemPropertyTitle)
-        query.addFilterPredicate(predicate)
-        musicPlayer.setQueue(with: query)
-        musicPlayer.prepareToPlay()
-    }
-    
     func getCover(size: CGSize) -> UIImage {
         return musicPlayer.nowPlayingItem?.artwork?.image(at: size) ?? UIImage(named: "Cover")!
     }
@@ -60,8 +53,10 @@ class MediaManager {
         let predicate = MPMediaPropertyPredicate(value: songTitle, forProperty: MPMediaItemPropertyTitle)
         query.addFilterPredicate(predicate)
         musicPlayer.setQueue(with: query) // Under construction
-        musicPlayer.prepareToPlay()
+        //musicPlayer.prepareToPlay()
+        
     }
+
     
     func pause(){
         musicPlayer.pause()

@@ -14,8 +14,9 @@ class MediaViewController: UIViewController, MCSessionDelegate {
     
     let player = MediaManager()
     
-    var connectedPeerIDs: [String] = [String()]
-    var tableViewTab: UITabBarController!
+    var connectedPeerIDs: [String] = [String]()
+    var permission = false
+    //var tabBarController: UITabBarController!
     
     // NCSession Variables:
     let peerID: MCPeerID = MCPeerID.init(displayName: UIDevice.current.name)
@@ -27,54 +28,59 @@ class MediaViewController: UIViewController, MCSessionDelegate {
     @IBOutlet weak var mediaStatusButton: UIImageView!
     @IBOutlet weak var songTitle: UILabel!
     
+    override func viewWillAppear(_ animated: Bool) {
+        permission = player.requestLibraryAccess()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //tabBarController = self.tabBarController
         session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
         session.delegate = self
         self.createMesh()
+        
         /* ------------------------ UNDER CONSTRUCTION---------------------------------------------------------
         
         tableViewTab = self.tabBarController?.viewControllers[1] as DevicesListTableViewController -> 1) Necesito pasar la sesión de este controller al segundo controller de mi tabBarView para poder obtener los peerIDs. Parece que el prepareForSegue no funciona en este tipo de Views.
  
-    ----------------------------------------------------------------------------------------------------------*/
+       ---------------------------------------------------------------------------------------------------------- */
         
         coverImage.image = UIImage(named: "Cover")
         player.preparePlayer()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        //self.disolveMesh()
+        self.disolveMesh()
+        player.pause()
     }
     
     
     // Player related functions:
     
     @IBAction func pressPlayButton(_ sender: UITapGestureRecognizer) {
-        if player.requestLibraryAccess() {
             if mediaStatusButton.image == UIImage(named: "play") {
                 player.playSong()
-                self.sendData()
+                self.sendData(infoToSend: player.getTitle())
                 songTitle.text = player.getTitle()
                 coverImage.image = player.getCover(size: CGSize(width: coverImage.frame.width, height: coverImage.frame.height))
                 mediaStatusButton.image = UIImage(named: "pause")
             } else {
                 mediaStatusButton.image = UIImage(named: "play")
+                self.sendData(infoToSend: "Pause")
                 player.pause()
             }
-        }
     }
     
     @IBAction func pressPreviousButton(_ sender: UITapGestureRecognizer) {
         player.previousSong()
-        self.sendData()
+        self.sendData(infoToSend: player.getTitle())
         songTitle.text = player.getTitle()
         coverImage.image = player.getCover(size: CGSize(width: coverImage.frame.width, height: coverImage.frame.height))
     }
     
     @IBAction func pressNextButton(_ sender: UITapGestureRecognizer) {
         player.nextSong()
-        self.sendData()
+        self.sendData(infoToSend: player.getTitle())
         songTitle.text = player.getTitle()
         coverImage.image = player.getCover(size: CGSize(width: coverImage.frame.width, height: coverImage.frame.height))
     }
@@ -91,8 +97,7 @@ class MediaViewController: UIViewController, MCSessionDelegate {
         self.session.disconnect()
     }
     
-    func sendData() {
-        let infoToSend = player.getTitle()
+    func sendData(infoToSend: String) {
         if let dataToSend: Data = infoToSend.data(using: .utf8) {
             for peer in session.connectedPeers {
                 do {

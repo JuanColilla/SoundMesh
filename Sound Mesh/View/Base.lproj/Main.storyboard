@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K5C-5w-mja">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="206-oq-n6i">
-                                <rect key="frame" x="67" y="135" width="241" height="59"/>
+                                <rect key="frame" x="67" y="195.66666666666669" width="241" height="59"/>
                                 <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="241" id="Nae-Kk-cBd"/>
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmR-2R-UL2">
-                                <rect key="frame" x="67" y="272" width="241" height="59"/>
+                                <rect key="frame" x="67" y="332.66666666666669" width="241" height="59"/>
                                 <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="241" id="9Ui-gh-d6y"/>
@@ -55,13 +55,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anfitrión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEh-hb-1Ni">
-                                <rect key="frame" x="144" y="37" width="87.5" height="30"/>
+                                <rect key="frame" x="143.66666666666666" y="97.666666666666657" width="87.666666666666657" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huésped" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFD-AC-Mii">
-                                <rect key="frame" x="92.5" y="385" width="190" height="29"/>
+                                <rect key="frame" x="92.666666666666686" y="445.66666666666663" width="190" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="44A-4H-sqb"/>
                                     <constraint firstAttribute="width" constant="190" id="rpf-wq-WvR"/>
@@ -71,7 +71,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-IR-Hqm">
-                                <rect key="frame" x="67" y="458" width="241" height="59"/>
+                                <rect key="frame" x="67" y="518.66666666666663" width="241" height="59"/>
                                 <color key="backgroundColor" red="0.75377182005837562" green="0.078075384498652617" blue="0.017189146184512869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="241" id="N6d-Wm-2XW"/>
@@ -122,22 +122,22 @@
             <objects>
                 <viewController id="lZp-ca-EA1" customClass="DevicesListTableViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MBY-E2-0G2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="09x-sm-2sl" userLabel="Device List Table View">
-                                <rect key="frame" x="16" y="22" width="343" height="405"/>
+                                <rect key="frame" x="16" y="22" width="343" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="7lG-Gt-XI0" style="IBUITableViewCellStyleDefault" id="qV1-S1-8gM" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qV1-S1-8gM" id="eX9-bu-Rod" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7lG-Gt-XI0">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -158,7 +158,7 @@
                                 </userDefinedRuntimeAttributes>
                             </tableView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-KR-Asg">
-                                <rect key="frame" x="16" y="443" width="343" height="94"/>
+                                <rect key="frame" x="16" y="530" width="343" height="94"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
@@ -202,18 +202,18 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
             <objects>
                 <viewController id="1Me-cB-FgU" customClass="MediaViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XGM-og-t5f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover" translatesAutoresizingMaskIntoConstraints="NO" id="9Tc-MG-Her">
-                                <rect key="frame" x="32.5" y="20" width="310" height="310"/>
+                                <rect key="frame" x="32.666666666666657" y="20" width="310" height="310"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="310" id="3Jf-6I-UAT"/>
                                     <constraint firstAttribute="height" constant="310" id="xe9-ow-1Nh"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="dvY-cC-ydK">
-                                <rect key="frame" x="267" y="434" width="50" height="48"/>
+                                <rect key="frame" x="267" y="521" width="50" height="48"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="CnY-AU-WvP"/>
@@ -224,7 +224,7 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="previous" translatesAutoresizingMaskIntoConstraints="NO" id="fk8-S3-flZ">
-                                <rect key="frame" x="57" y="434" width="50" height="48"/>
+                                <rect key="frame" x="57" y="521" width="50" height="48"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="jz5-hl-mKD"/>
@@ -235,7 +235,7 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="d7O-Vh-5gb">
-                                <rect key="frame" x="137.5" y="436" width="100" height="45"/>
+                                <rect key="frame" x="137.66666666666666" y="523" width="100" height="45"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7Mb-xo-mD8"/>
@@ -246,7 +246,7 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-CQ-nWX">
-                                <rect key="frame" x="32" y="370.5" width="310" height="23.5"/>
+                                <rect key="frame" x="32" y="457.66666666666669" width="310" height="23.333333333333314"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                 </accessibility>
@@ -323,11 +323,11 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
             <objects>
                 <viewController id="J8x-v2-ZbI" customClass="MeshDiscoveryViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uFE-fL-OC2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uf-gs-rNN">
-                                <rect key="frame" x="41" y="525" width="293" height="49"/>
+                                <rect key="frame" x="41" y="612" width="293" height="49"/>
                                 <color key="backgroundColor" red="0.1072923616" green="0.18785125019999999" blue="0.25393044949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="kvb-gS-5Ta"/>
@@ -344,7 +344,7 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="¿No encuentras tu malla? Crea tú una." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rne-fV-IDX">
-                                <rect key="frame" x="16" y="480" width="343" height="37"/>
+                                <rect key="frame" x="16" y="567" width="343" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -385,12 +385,23 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                     <action selector="searchMesh:" destination="J8x-v2-ZbI" eventType="touchUpInside" id="Wfh-6S-tar"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA4-lY-lLB">
+                                <rect key="frame" x="33" y="382" width="309" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="309" id="LJm-gW-BOd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9uf-gs-rNN" firstAttribute="top" secondItem="rne-fV-IDX" secondAttribute="bottom" constant="8" id="0v2-hH-m06"/>
+                            <constraint firstItem="KA4-lY-lLB" firstAttribute="top" secondItem="8Ja-JX-ozy" secondAttribute="bottom" constant="59" id="6Gq-II-po3"/>
                             <constraint firstItem="rne-fV-IDX" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="16" id="6RA-or-oTN"/>
                             <constraint firstItem="o2Q-9T-Uqq" firstAttribute="trailing" secondItem="rne-fV-IDX" secondAttribute="trailing" constant="16" id="Bhh-Nc-TxR"/>
+                            <constraint firstItem="KA4-lY-lLB" firstAttribute="centerX" secondItem="uFE-fL-OC2" secondAttribute="centerX" id="Rcj-Hu-YXr"/>
                             <constraint firstItem="o2Q-9T-Uqq" firstAttribute="trailing" secondItem="9uf-gs-rNN" secondAttribute="trailing" constant="41" id="WZW-vm-XtK"/>
                             <constraint firstItem="o2Q-9T-Uqq" firstAttribute="bottom" secondItem="9uf-gs-rNN" secondAttribute="bottom" constant="29" id="eh1-zq-5e6"/>
                             <constraint firstItem="8Ja-JX-ozy" firstAttribute="leading" secondItem="o2Q-9T-Uqq" secondAttribute="leading" constant="32" id="jgk-rD-i2K"/>
@@ -409,18 +420,19 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                     <connections>
                         <outlet property="SearchButton" destination="TEk-Pb-SKZ" id="xbd-I1-c1u"/>
                         <outlet property="songCover" destination="8Ja-JX-ozy" id="xbG-5L-DIQ"/>
+                        <outlet property="songTitleLabel" destination="KA4-lY-lLB" id="z2i-Mi-YIt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bs-fX-oWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3192.8000000000002" y="42.728635682158924"/>
+            <point key="canvasLocation" x="3192.8000000000002" y="42.118226600985224"/>
         </scene>
         <!--Orador-->
         <scene sceneID="fnl-Qb-4ar">
             <objects>
                 <viewController id="Wed-Rg-0kv" customClass="OratorViewController" customModule="Sound_Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5v6-rD-WyC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mic" highlightedImage="Orator Mic" translatesAutoresizingMaskIntoConstraints="NO" id="pPm-g0-v7u">
@@ -435,18 +447,18 @@ Si alguien no encuentra tu malla deberá asegurarse de tener tanto el Wi-Fi como
                                 </connections>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W2x-dq-iSY">
-                                <rect key="frame" x="16" y="347" width="343" height="165"/>
+                                <rect key="frame" x="16" y="347" width="343" height="252"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ZaH-on-MHz" style="IBUITableViewCellStyleDefault" id="Qg3-DL-puI" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qg3-DL-puI" id="hCl-WM-m54" customClass="DeviceListViewCell" customModule="Sound_Mesh" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZaH-on-MHz">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -477,7 +489,7 @@ Pulsa el micrófono para activar/desactivar la función de orador:</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Puedes eliminar dispositivos de ésta malla de forma individual." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-Bi-7xL">
-                                <rect key="frame" x="16" y="520" width="343" height="47"/>
+                                <rect key="frame" x="16" y="607" width="343" height="47"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -537,7 +549,7 @@ Pulsa el micrófono para activar/desactivar la función de orador:</string>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yE6-h6-Iyh">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

@@ -19,7 +19,7 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
     
     @IBOutlet weak var SearchButton: UIButton!
     @IBOutlet weak var songCover: UIImageView!
-    @IBOutlet weak var playButton: UIImageView!
+    @IBOutlet weak var songTitleLabel: UILabel!
     
     
     
@@ -30,7 +30,7 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
         self.SearchButton.isHidden = false
         self.SearchButton.isEnabled = true
         self.songCover.isHidden = true
-   
+        self.songTitleLabel.isHidden = true
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -50,6 +50,8 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
     func playReceivedSong(songTitle: String) {
         if player.requestLibraryAccess() {
                player.prepareJoinedPlayer(songTitle: songTitle)
+               songCover.image = player.getCover(size: CGSize(width: songCover.frame.width, height: songCover.frame.height))
+               songTitleLabel.text = player.getTitle()
                player.playSong()
         }
     }
@@ -66,7 +68,11 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
         if (songTitle == "Pause") {
             self.player.pause()
         } else {
-            self.playReceivedSong(songTitle: songTitle)
+            if (songTitle == player.getTitle()) {
+                player.playSong()
+            } else {
+                self.playReceivedSong(songTitle: songTitle)
+            }
         }
     }
     
@@ -87,6 +93,7 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
         self.SearchButton.isHidden = true
         self.SearchButton.isEnabled = false
         self.songCover.isHidden = false
+        self.songTitleLabel.isHidden = false
     }
     
     func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {

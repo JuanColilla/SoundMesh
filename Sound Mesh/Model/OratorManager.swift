@@ -21,7 +21,7 @@ class OratorManager {
                               AVEncoderBitRateKey: 12000,
                               AVNumberOfChannelsKey: 1 ] as [String : Any]
         
-        let audioRUL = OratorManager.getFileURL()
+        let audioRUL = self.getFileURL()
         
         do {
             try microphone = AVAudioRecorder(url: audioRUL as URL, settings: recordSettings)
@@ -36,18 +36,17 @@ class OratorManager {
         do {
             try session.setCategory(.record, mode: .spokenAudio)
             try session.setActive(true)
-             // -> Ask for user permission on using microphone. / NOT FINNISHED
+             // -> Ask for user permission on using microphone.
             
         } catch {
-            print("No se han dado permisos.")
+            print("FAIL")
         }
         
         session.requestRecordPermission({(granted: Bool)-> Void in
             if granted {
-                print(" granted")
                 grantedPermissions = true
             }else{
-                print("not granted")
+                grantedPermissions = false
             }
         })
         return grantedPermissions
@@ -66,12 +65,12 @@ class OratorManager {
         
     }
     
-    class func getCacheDirectory() -> NSURL {
+    func getCacheDirectory() -> NSURL {
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory , FileManager.SearchPathDomainMask.userDomainMask, true)
         return NSURL.init(fileURLWithPath: paths[0])
     }
     
-    class func getFileURL() -> NSURL {
+    func getFileURL() -> NSURL {
         let path = NSURL(string:"audioToStream.m4a", relativeTo: self.getCacheDirectory() as URL)  // getCacheDirectory() + "/audioFileName.m4a"
         
         return path!
