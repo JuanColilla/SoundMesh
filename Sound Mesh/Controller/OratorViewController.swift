@@ -10,17 +10,21 @@ import UIKit
 import AVFoundation
 import MultipeerConnectivity
 
-class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate, MCSessionDelegate {
+class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate, MCSessionDelegate, UITableViewDataSource, UITableViewDelegate {
     
     var recordingSession: AVAudioSession!
     var micManager = OratorManager()
     var permission = false
+    let reuseIdentifier = "Cell"
     
     // NCSession Variables:
     let peerID: MCPeerID = MCPeerID.init(displayName: UIDevice.current.name)
     var session: MCSession!
     var meshAdvertiserAssistant: MCAdvertiserAssistant!
-    var connectedPeerIDs: [String] = [String()]
+    var connectedPeerIDs: [String] = [String]()
+    
+    @IBOutlet weak var peerTable: UITableView!
+    
     
     @IBOutlet weak var micImage: UIImageView!
     
@@ -34,6 +38,9 @@ class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioReco
         session.delegate = self
         self.createMesh()
         self.permission = micManager.prepareRecording(session: recordingSession)
+        self.peerTable.dataSource = self
+        self.peerTable.delegate = self
+        self.peerTable.reloadData()
     }
     
     @IBAction func micImageTap(_ sender: UITapGestureRecognizer) {
@@ -47,15 +54,25 @@ class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioReco
         }
     }
     
+    func updateTable() {
+        connectedPeerIDs.removeAll()
+        for peer in session.connectedPeers {
+            connectedPeerIDs.append(peer.displayName)
+        }
+        DispatchQueue.main.async {
+            self.peerTable.reloadData()
+        }
+    }
+    
     
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         switch state {
         case .connected:
-            connectedPeerIDs.append(peerID.displayName)
-            
+            //connectedPeerIDs.append(peerID.displayName)
+            self.updateTable()
         case .notConnected:
-            connectedPeerIDs.removeAll{( $0.contains(peerID.displayName) )}
-            
+            //connectedPeerIDs.removeAll{( $0.contains(peerID.displayName) )}
+            self.updateTable()
         case .connecting:
             break
         @unknown default:
@@ -72,6 +89,23 @@ class OratorViewController: UIViewController, AVAudioPlayerDelegate, AVAudioReco
         self.meshAdvertiserAssistant.stop()
         self.session.disconnect()
     }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return connectedPeerIDs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! DeviceListViewCell
+        
+        let peer: String = connectedPeerIDs[indexPath.row]
+        cell.title.text = peer
+        
+        return cell
+    }
+    
+    
+    
     
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {

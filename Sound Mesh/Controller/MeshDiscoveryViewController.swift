@@ -16,12 +16,16 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
     var session: MCSession!
     var meshAdvertiserAssistant: MCAdvertiserAssistant!
     let player = MediaManager()
+    var permission = false
     
     @IBOutlet weak var SearchButton: UIButton!
     @IBOutlet weak var songCover: UIImageView!
     @IBOutlet weak var songTitleLabel: UILabel!
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        permission = player.requestLibraryAccess()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +52,11 @@ class MeshDiscoveryViewController: UIViewController, MCSessionDelegate, MCBrowse
     }
     
     func playReceivedSong(songTitle: String) {
-        if player.requestLibraryAccess() {
                player.prepareJoinedPlayer(songTitle: songTitle)
-               songCover.image = player.getCover(size: CGSize(width: songCover.frame.width, height: songCover.frame.height))
-               songTitleLabel.text = player.getTitle()
                player.playSong()
+        DispatchQueue.main.async {
+            self.songCover.image = self.player.getCover(size: CGSize(width: self.songCover.frame.width, height: self.songCover.frame.height))
+            self.songTitleLabel.text = self.player.getTitle()
         }
     }
     
